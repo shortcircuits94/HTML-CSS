@@ -1,0 +1,49 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Program name: 2-D Temperature Array 
+// Purpose: Create and Populate a 2-D array for temperatures ROWS=weeks COLUMNS = weeks 
+// Author: Rebecca Scott 
+// Date: 2016-11-16
+
+
+// Declare variables 
+var WEEKS = 3; // # of weeks 
+var DAYS = 7; // # of days 
+var weekIndex; // index for week 
+var dayIndex; // index for day 
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string 
+
+
+
+// Declare first dimension of array
+var temps = new Array(WEEKS);
+
+
+// Declare second dimension of array
+// Each WEEK element is an array of DAYS
+for (weekIndex = 0; weekIndex < WEEKS; weekIndex++) {
+   temps[weekIndex] = new Array(DAYS);
+}
+
+// prompt user to populate the array 
+for (weekIndex = 0; weekIndex < WEEKS; weekIndex++) {
+  for (dayIndex = 0; dayIndex < DAYS; dayIndex++) {
+     temps[weekIndex][dayIndex] = prompt("Enter the temperature for Week " + (weekIndex + 1) + ", Day" + (dayIndex + 1),ES);
+	}
+}
+
+// display array 
+for (weekIndex = 0; weekIndex < WEEKS; weekIndex++) {
+    document.write("Temperature for Week " + (weekIndex + 1) + ": ");
+	for (dayIndex = 0; dayIndex < DAYS; dayIndex++) {
+	  document.write(temps[weekIndex][dayIndex] + " ");
+	}
+   document.write(BR);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Bulk Is Best Ordering
+// Purpose: Take orders for packages
+// of paper towels
+//   Pricing is based on quantity ordered
+//   Shipping cost is based on state
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+
+// Declare variables
+var numPkgs;          // # of packages ordered
+var pkgPrice;          // cost of one package
+var totPkgCost;      // total cost of packages
+var shipCost;          // shipping cost
+var totOrderCost;   // total cost of order
+var firstName;             // customer first name
+var lastName;             // customer last name
+var custName;            // customer full name
+var state;                    // state to be shipped to
+var BR "<br />"; // html line break 
+var ES ""; // empty string
+var PA = "<p />"; // paragraph line break
+
+// Welcome the user
+// Ask for ordering information
+document.write("Welcome to Bulk Is Best!" + BR);
+firstname = prompt("Please enter your first name: ",ES);
+lastName = prompt("Please enter your last name: ",ES);
+numPkgs = prompt("Enter the number of paper towel packages: ",ES);
+numPkgs = parseInt(numPkgs);
+state = prompt("Enter the state to ship to: ",ES);
+
+
+// Concatenate first and last name
+custName = firstName + " " + lastName;
+   
+// Compute per package price and shipping cost
+if (numPkgs >= 6) {
+   pkgPrice = 2.00;
+}
+else {
+   pkgPrice = 2.50;
+}
+
+if (state == "ID") {
+   shipCost = 0.00;
+}
+else {
+   shipCost = 4.00;
+}
+
+// Compute and display order totals
+totPkgCost = pkgPrice * numPkgs;
+totOrderCost = totPkgCost + shipCost;
+document.write(PA + "Order Summary for " + custName + BR);
+document.write("Number packages ordered: " + numPkgs + BR);
+document.write("Price per package: " + pkgPrice + BR);
+document.write("Subtotal: " + totPkgCost + BR);
+document.write("Order will be shipped to: " + state + BR);
+document.write("Shipping cost: " + shipCost + BR);
+document.write("Order total: " + totOrderCost + BR);
+
+// Thank the user and end the program
+document.write("Thank you!" + BR);
+   
+</script>
+</body>
+</html>

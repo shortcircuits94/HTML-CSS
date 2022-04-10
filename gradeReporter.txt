@@ -1,0 +1,51 @@
+// Program Name: Grade Reporter
+// Purpose: Allows a student to enter a percentage, 
+// number of absences and then displays the grade
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-27
+
+Start 
+
+// Declare variables 
+Declare Numeric gradePer // grade percentage 
+Declare Numeric numAb // number of absences
+Declare Numeric finalGrade // final grade 
+Declare Numeric percent // percent of grade bump
+
+// Greet user and prompt for info 
+Display "Welcome to the Grade Reporter calculator!"
+Display "Enter your grade percentage."
+input gradePer
+Display "Enter the number of absences."
+input numAb
+
+90 to 100 = A 80 to 89.9 = B 70 to 79.9 = C 60 to 69.9 = D Under 60 = F 
+
+
+2 absences or less 3% bump 
+5 absences or more automatic fail 
+
+
+Show the explaination  
+
+Possible ways to explain 
+
+If 2 absences or less then 
+percent = 0.03
+Else If 3-4 absences then 
+percent = 0.00 
+Else 5 absences or more then 
+grade = 0
+
+finalGrade = PER_CENT * gradePer
+
+If 90 to 100 Then 
+Display "You have earned an A, with a 3% bump" + finalGrade
+Else If 80 to 89.9
+Display "You have earned an B, with a 3% bump" + finalGrade
+Else If 70 to 79.9
+Display "You have earned an C, with a 3% bump" + finalGrade
+Else If 60 to 69.9
+Display "You have earned an D, with a 3% bump" + finalGrade
+Else 60 or less 
+Display "You have earned an F" + finalGrade

@@ -1,0 +1,62 @@
+// Program name: Frozen Rainbow Promotion 
+// Purpose: Compute stats for coupon purchases
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-07
+
+Start 
+
+// Declare variables 
+Declare String empName // employee name 
+Declare String maxName // employee with high total 
+Declare Numeric dailyAmt // daily employee amounts
+Declare Numeric empTot // total employee purchases 
+Declare Numeric maxTot = 0 // highest employee total 
+Declare Numeric grandTot = 0 // total of all purchases 
+Declare Numeric dayIndex // loop index for weekdays 
+
+// Display program header 
+// prompt for first employee name 
+Display "Frozen Rainbow Promotion Program"
+Display "Enter employee's name or Q to quit:"
+Input empName 
+
+// Start the outer loop 
+// and set employee's total to 0 
+While empName != "Q"
+	empTot = 0 
+	
+// Start the inner loop.
+// prompt for daily amounts
+// Add each daily amount to total 
+For dayIndex = 1 to 5
+Display "Enter the amount for day: " + dayIndez
+Input dailyAmt 
+empTot + dailyAmt 
+End For 
+
+// Display employee's name and total 
+// Compare total with max tool  
+// If higher, 
+// replace max total and employee's name 
+// Add total to grand total 
+Display empName + ": total is " + empTot
+If empTot > maxTot Tehn 
+	maxTot = empTot 
+	maxName = empName 
+End If 
+grandTot = grandTot + empTot
+
+// Prompt for next employee's name, end loop
+Display "Enter employee's name or Q to quit: "
+Input empName
+End While 
+
+// Display grand total and display 
+// name and amount of highest employee
+Display "Grand total of coupon purchases: " + grandTot
+Display "Employee with highest amount: " + maxName 
+Display "Highest amount: " + maxTot
+
+// Thank the user and end the program 
+Display "Frozen Rainbow thanks you!"
+Stop

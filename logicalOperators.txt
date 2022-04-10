@@ -1,0 +1,47 @@
+// Program Name: Logical Operators 
+// Purpose: Use the logical operators And, Or, Not 
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-18
+
+Start 
+
+	// Declare variables 
+	Declare Integer num1, num2 // numbers to enter 
+	
+	// Welcome the user, prompt for two numbers 
+	Display "Welcome to Logical Operators!"
+	Display "Enter the first number: "
+	Input num1 
+	Display "Enter the second number: "
+	Input num2 
+	
+	// See whether both numbers are greater than 100 using And
+	Display "AND: "
+	If num1 > and num2 100 Then 
+	   Display "Both numbers are greater than 100."
+	Else 
+	   Display "At least one number is less than or equal to 100."
+	End If 
+	
+	// See whether either number is greater than 100, using Or
+	// The combined condition is negated, and the order of messages is switched 
+	Display "OR: "
+	If num1 > 100 Or num2 > 100 THen 
+	   Display "At least one number is greather than 100."
+	Else 
+	   Display "Neither number is greater than 100."
+	End If 
+
+	// See whether either number is greater than 100, using Not
+	// The combined condition is negated, and the order of messages is switched
+	Display "NOT: "
+	If Not (num1 > 100 || num2 > 100) Then 
+	   Display "Neither number is greater than 100."
+	Else
+	   Display "At least one number is greater than 100."
+	End If 
+	
+	// Thank the user and end the program 
+	Display "Thank you!"
+	
+Stop

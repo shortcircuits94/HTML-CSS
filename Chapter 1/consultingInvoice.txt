@@ -1,0 +1,55 @@
+// Program Name: Consulting Invoice 
+// Purpose: Create invoices for Watt Gives
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+Start
+
+//Variables and constants
+Declare Numeric hoursWorked // Hours worked daily
+Declare Numeric count1, count2, count3, count4, count5 // Number of hours worked
+Declare Numeric totRate // Total pay rate
+Declare Numeric totHour // Total hours worked
+Declare String bcompName// Billed company name
+Declare Constant PAY_RATE = 30 // pay rate per hour
+
+
+// Program Heading
+Display "Watt Gives Invoicing"
+
+// Get billed company name
+Display "Enter name of company to be billed"
+input compName
+
+// Get hourly rate 
+Display "Enter rate billed by hour"
+Input payRate
+
+//Get number of hours worked everyday
+Display "Enter number of hours worked on Day 1"
+Input count1
+Display "Enter number of hours worked on Day 2"
+Input count2 
+Display "Enter number of hours worked on Day 3"
+Input count3
+Display "Enter number of hours worked on Day 4"
+Input count4
+Display "Enter number of hours worked on Day 5"
+Input count5
+
+// Calculate total hours and total pay rate
+totHour = count1 + count2 + count3 + count4 +count5
+totRate = totHour * PAY_RATE
+
+// Display invoice information
+Display "Watt Gives Invoice"
+Display "Invoice statement for " + compName
+Display "Hourly Rate" + payRate
+Display "Hours Worked" + totHour
+Display "Total Amount Billed" + totRate
+
+// Close Program
+Display "Thank you for using this program!"
+Stop
+
+

@@ -1,0 +1,43 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Customer Statistics
+// Purpose: Compute total average number of customers over 4 hours
+// Author: Rebecca Scott 
+// Last date modified: 09-Sept-2016
+
+// Variables and constants
+var sum1, sum2; // Market values
+var janDif; // Difference between market values
+var janDiv; // Divided answer from janDif, janTen
+var janPer; // Percent answer
+var PER_CENT = 100; // Multiply buy 100 for percentage
+var BR = "<br />"; // HTML line break
+var ES = ""; // empty string
+
+// Program Heading
+document.write("Conners Building Percentage Calculator" + BR );
+
+// Get market values for both months
+sum1 = prompt("Enter January 2010 market value:",ES);
+sum1 = parseFloat(sum1);
+sum2 = prompt ("Enter January 2011 market value:",ES);
+sum2 = parseFloat(sum2);
+
+// Calculate the difference, calculate the percentage and display the results
+janDif = sum1 - sum2;
+janDiv = janDif / sum2;
+janPer = janDiv * PER_CENT;
+document.write("The difference between January 2010 and January 2011:$ " + janDif.toFixed(2) + BR);
+document.write("Percentage increase/decrese:% " + janPer.toFixed(1) + BR);
+
+// Thank the user and end the program
+document.write("Thank you for using this program!" + BR);
+
+
+
+
+</script>
+</body>
+</html>

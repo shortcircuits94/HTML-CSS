@@ -1,0 +1,83 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name payrollCalc.txt
+// Purpose: Get payroll information, calculate
+// Author: Rebecca Scott
+// Date last modified: 2016-09-20
+
+
+// Declare variables
+var firstName // employee's first name
+var lastName // employee's last name 
+var fullName // employee's full name
+var grossPay // gross pay
+var netPay // net pay
+var hoursWorked // hours worked
+var wageRate // wage rate
+var fedTaxWith // federal withholding
+var stateTaxWith // state withholding
+var countyTaxWith // county withholding
+var medInsDed // medical insurance deduction
+var totDeductions // total deductions
+
+// Declare constants (withholding rates)
+var FED_RATE = .15 // federal rate
+var STATE_RATE = .034 // state rate
+var COUNTY_RATE = .011 // county rate
+
+// Declare constants (display)
+var BR = "<br />"; // HTML line break
+var PA = "<p />"; // HTML paragraph break
+var ES = ""; // empty string
+
+// Program heading
+document.write("Employee Payroll Calculator" + PA)
+
+// Get employee's name, hours worked, and wage rate
+lastName = prompt("Enter the employee's last name:",ES);
+firstName = prompt("Enter the employee's first name:",ES);
+hoursWorked = prompt("Enter the number of hours worked:",ES);
+hoursWorked = parseFloat(hoursWorked);
+wageRate = prompt ("Enter the employee's hourly rate:",ES);
+wageRate = parseFloat(wageRate);
+
+// Calculate the gross pay
+grossPay = hoursWorked * wageRate;
+
+// Calculate federal, state, and county withholding
+fedTaxWith = grossPay * FED_RATE;
+stateTaxWith = grossPay * STATE_RATE;
+countyTaxWith = grossPay * COUNTY_RATE;
+
+// Get the medical insurance deduction
+medInsDed = prompt("Enter the medical insurance deduction:",ES);
+medInsDed = parseFloat(medInsDed);
+
+// Calculate total deductions and net pay
+totDeductions = fedTaxWith + stateTaxWith + countyTaxWith + medInsDed;
+netPay = grossPay - totDeductions;
+
+// Concatenate first and last name
+fullName = firstName + " " + lastName;
+
+// Display all information
+document.write("Payroll information for: " + fullName + BR);
+document.write("Hours worked: " + hoursWorked + BR);
+document.write("Hourly wage rate: " + wageRate + BR);
+document.write("Gross pay: $ " + grossPay +BR);
+document.write("Withholdings" + BR);
+document.write("Federal income tax: $ " + fedTaxWith + BR);
+document.write("State income tax: $ " + stateTaxWith + BR);
+document.write("County income tax: $ " + countyTaxWith + BR);
+document.write("Medical insurance: $ " + medInsDed + BR);
+document.write("Total deductions: $ " + totDeductions + BR);
+document.write("Net Pay: $ " +netPay + PA);
+
+// End the program 
+document.write("End of program. Good-bye!" + BR);
+
+</script>
+</body>
+</html>

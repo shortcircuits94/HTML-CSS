@@ -1,0 +1,63 @@
+// Program name: Bulk Is Best Ordering
+// Purpose: Take orders for packages of paper towels
+//	Pricing is based on quantity ordered
+//	Shipping cost is based on state
+// Author: Rebecca Scott
+// Date last modified: 2016-09-27
+
+
+Start
+
+// Declare variables
+Declare Numeric numPkgs // # of packages ordered
+Declare Numeric pkgPrice // cost of one packages
+Declare Numeric totPkgCost // total cost of packages
+Declare Numeric shipCost // shipping cost
+Declare Numeric totOrderCost // total cost of ordered
+Declare String firstName // customer first name
+Declare String lastName // customer last name 
+Declare String custName // customer full name 
+Declare String state // state to be shipped to 
+
+// Welcome the user 
+// Ask for ordering information
+Display "Welcome to Bulk is Best!"
+Display "Please enter your first name: "
+Input firstName
+Display "Please enter your last name: "
+Input lastName 
+Display "Enter number of paper towel packages: "
+Input numPkgs
+Display "Enter the state to ship to: "
+Input state 
+
+// Concatenate first and last name 
+custName = firstName + " " + lastName 
+ 
+// Compute per package price and shipping cost
+If numPkgs >= 6 Then
+	pkgPrice = 2.00
+Else 
+	pkgPrice = 2.50
+End If 
+
+If state == "ID" Then
+	shipCost = 0.00 
+Else
+	shipCost = 4.00
+End If
+
+// Compute and display order totals
+totPkgCost = pkgCost * numPkgs
+totOrderCost = rorPkgCost + shipCost
+Display "Order Summary for " + custName
+Display "Number packages ordered: " + numPkgs 
+Display "Price per package: " + pkgPrice
+Display "Subtotal: " + totPkgCost 
+Display "Order will be shipped to: " + state 
+Display "Shipping cost: " + shipCost
+Display "Order total: " + totOrderCost
+
+// Thank the user and end the program 
+Display "Thank you!"
+Stop

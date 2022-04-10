@@ -1,0 +1,70 @@
+// Program name: Movie Order Class
+// Purpose: Create and order from MovieOrder class 
+// Author: Rebecca Scott 
+// Date last modified: 2016-09-30
+
+Class MovieOrder
+// Variables
+String movieName // title of movie 
+Numeric moviePrice // price of movie 
+
+// Constructor method for movie order 
+Constructor Method MovieOrder (String name, String deliv)
+movieName = name
+If deliv == "S" Then
+	moviePrice = 3.99
+Else
+	moviePrice = 4.99
+End If
+
+End Method
+
+// Method to display information about order
+Method displayInfo()
+	Display "Movie name: " + movieName
+	Display "Price: " + moviePrice 
+End Method 
+End Class 
+
+Start 
+// Variables
+Numeric choice // # of movie selection
+String movie // name of movie 
+String deliveryType // delivery type (S or D)
+
+// Welcome the User 
+Display "Welcome to MovieStream!"
+
+// Get movie chose from user
+Display "Enter 1 to order STAR WARS,"
+Display       "2 for E.T., or "
+Display       "3 for RAIDERS OF THE LOST ARK"
+Input choice 
+
+// Determine title 
+If choice == 1 Then 
+   movie = "Star Wars"
+Else If choice == 2 Then 
+   movie = "E.T."
+Else If choice == 3 Then
+   movie = "Raiders of the Lost Ark"
+Else 
+   movie = ""
+Display "Invalid choice."
+End If
+
+// Get delivery type from user 
+Display "Enter S to stream movie"
+Display "or D to Download: "
+Input deliveryType
+
+// Call constructo method to create order 
+// Call method to display movie name and price 
+MovieOrder myOrder = new MovieOrder 
+(movie, deliveryType)
+myOrder.displayInfo()
+
+// Thank the user 
+Display "Thank you!" 
+
+Stop 

@@ -1,0 +1,45 @@
+// Program Name: Coffee Survey
+// Purpose: Accumulate totals for three categories
+// Author: Rebecca Scott
+// Date last modified: 2016-10-15
+
+Start
+   // Declare variables and constants
+   Declare String cardCat                        // card category (M=morning, A=afternoon, E=evening)
+   Declare Numeric numCards                // single entry of card numbers
+   Declare Numeric morningTotal = 0     // total of morning cards
+   Declare Numeric afternoonTotal = 0   // total of afternoon cards
+   Declare Numeric eveningTotal = 0      // total of evening cards
+
+   // Welcome user, start loop, ask for first card category
+   Display "Mack's Coffee Cove Survey Tabulation"
+   Display "Enter the category for the first batch of cards (M, A, or E) or Q to quit: "
+   Input cardCat
+
+   // Start the loop, ask for number of cards in category
+   While cardCat != "Q"
+      Display "Enter the number of cards in this batch: "
+      Input numCards
+
+      // Determine the category and add to that category total
+      If cardCat == "M" Then
+         morningTotal = morningTotal + numCards
+      Else If cardCat == "A" Then
+         afternoonTotal = afternoonTotal + numCards
+      Else If cardCat == "E" Then
+         eveningTotal = eveningTotal + numCards
+      End If
+
+      // Ask for next card category, end loop
+      Display "Enter the category for the next batch of cards (M, A, or E) or Q to quit: "
+      Input cardCat
+   End While
+
+   // Display totals
+   Display "Total # of morning cards: " + morningTotal
+   Display "Total # of afternoon cards: " + afternoonTotal
+   Display "Total # of evening cards: " + eveningTotal
+
+   // Display end of program message, end program
+   Display "End of program. Thank you!"
+Stop

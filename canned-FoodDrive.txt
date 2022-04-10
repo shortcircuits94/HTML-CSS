@@ -1,0 +1,31 @@
+// Program name: Canned Food Drive 
+// Purpose: Use a loop to accumulate donations 
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-04
+
+Start 
+
+// Declare variables
+Declare Numeric numCans // cans for one donation 
+Declare Numeric totalCans = 0 // total cans donated 
+
+// Identify program and prompt for first donation 
+Display "Canned Food Donation Program"
+Display "Enter # of cans (or -1 to quit):"
+Input numCans
+
+// Start loop, add cans to total, display running total 
+While numCans !=-1
+	totalCans = totalCans + numCans 
+	Display "Total cans so far: " + totalCans
+	
+	// Prompt for next donations, end loop 
+	Display "Enter # of cans (or -1 to quit):"
+	Input numCans
+End While 
+
+// Display final total, thank user, end program 
+Display "Total # of cans donated:" + totalCans 
+Display "Thank you!"
+
+Stop 

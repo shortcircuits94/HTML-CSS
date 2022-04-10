@@ -1,0 +1,42 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Sales Increase
+// Purpose: Show the increase in sales for 2011 compared with 2010 in percentage 
+// Author: Rebecca Scott
+// Date last modified: 2016-09-27
+
+
+// Declare Variables and Constants 
+var sum1; // 2011 sales numbers
+var sum2; // 2010 sales numbers 
+var salesDif; // difference between sales numbers 
+var salesDiv; // divided answer for the difference by 2010 
+var salesPer; // sales percentage 
+var PER_CENT = 100; // Multiply by 100 for percentage
+var ES = ""; // literal empty string
+var BR = "<br/>"; // HTML line break 
+var PA = "<p />";    // HTML paragraph break
+
+// Welcome the user ask for yearly sales numbers
+document.write("Welcome to the Sales Increase Calculator!" + PA);
+sum1 = prompt("Enter 2011 sales numbers: ",ES);
+sum1 = parseFloat(sum1);
+sum2 = prompt("Enter 2010 sales numbers: ",ES);
+sum2 = parseFloat(sum2);
+
+// Compute the difference and calculate the percentage and display results
+salesDif = sum1 - sum2;
+salesDiv = salesDif / sum2;
+salesPer = salesDiv * PER_CENT;
+document.write("The Percentage of Sales increase is: % " + salesPer.toFixed(2) + PA);
+
+// Thank the user and end the program 
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>
+
+

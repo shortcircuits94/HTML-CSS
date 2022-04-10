@@ -1,0 +1,87 @@
+// Program Name: Account Class 
+// Purpose: Pseudocode for defining a class
+// Author: Rebecca Scott 
+// Date last modified: 2016-12-06
+
+
+Class Account
+
+// Declare class variables 
+String acctType // account type 
+Numeric acctNumber // account number 
+String lastName // owner's last name 
+String firstName // owner's first name 
+Numeric acctBal // account balance 
+
+// Constructor method with fire parameters
+Constructor Method Account(String type, String Numeric num, String lName, String fName, Numeric bal)
+	acctType = type
+	acctNumber = num 
+	lastName = lName 
+	firstName = fName
+	acctBal = bal 
+End Method 
+
+// Method to deposit an amount in the account 
+Method deposit(Numeric amt)
+	acctBal = acctBal + amt
+	Display "The new balance is: $" + acctBal 
+End Method 
+
+// Method to withdraw an amount in the account 
+Method withdraw(Numeric amt)
+	acctBal = acctBal - amt
+	Display "The new balance is: $" + acctBal
+End Method 
+
+// Method to change the first and last name 
+Method changeName(String lName, String fName)
+	lastName = lName 
+	firstName = fName 
+	Display "The name has been changed to " + firstName + " " + lastName
+End Method 
+
+// Method to inquire about the account balance 
+Method Numeric inquire()
+	Return acctBal
+End Method 
+
+// Method to display all information about the account 
+Method displayInfo()
+	Display "Account #: " + acctNumber
+	Display "Account type: " + acctType
+	Display "Owner name: " + lastName + ", " + firstName
+	Display "Current balance: " + acctBal
+End Method 
+
+
+	
+End Class 
+
+
+Start 
+// State program purpose 
+Display "Account program"
+Display "This program creates an account"
+Display "It also modifies the account with class methods"
+
+// Create an account object 
+Account mySavingsAcct = new Account ("S", 1376433, "Dunes", "Sandi", 80.00)
+
+	// Deposit $100 
+	mySavingsAcct.deposit(100.00)
+
+	// Withdraw $50
+	mySavingsAcct.withdraw(50.00)
+	
+	// Inquire about balance
+	mySavingsAcct.inquire()
+	
+	// Display the information to verify
+	mySavingsAcct.displayInfo()
+	
+
+//Thank the user 
+Display "Thank you!"
+
+Stop 

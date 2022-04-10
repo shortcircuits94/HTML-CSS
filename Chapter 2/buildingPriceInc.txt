@@ -1,0 +1,40 @@
+// Program Name: Building Price Inc.
+// Purpose: Calculate the percentage increase or decrease of the market value of the Connors Building
+// Author: Rebecca Scott
+// Date: September 19, 2016
+
+Start
+
+// Variables and constants
+Declare Numeric sum1, sum2 // Market values
+Declare Numeric janDif // Difference between market values
+Declare Numeric janDiv // Divided answer from janDif, janTen
+Declare Numeric janPer // Percent answer
+Declare Constant PER_CENT = 100 // Multiply buy 100 for percentage
+
+
+// Program Heading
+Display " Conners Building Percentage Calculator"
+
+// Get market values for both months
+Display "Enter January 2010 market value"
+Input janTen
+Display "Enter January 2011 market value"
+Input janEleven
+
+// Compute the difference, calculate the percentage and display the results
+jandif = janTen - janEleven
+janDiv = janDif / janTen
+janPer = janDiv * PER_CENT
+Display "The difference between January 2010 and January 2011: " + janDiv
+Display "Percentage increase or decrese: " + janPer
+
+// Thank the user and end the program
+Display "Thank you for using this program!"
+Stop
+
+
+
+janTen - janEleven -- janDif
+janDif / janTen = janDiv
+janDiv * PER_CENT = janPer

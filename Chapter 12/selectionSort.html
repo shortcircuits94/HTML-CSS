@@ -1,0 +1,60 @@
+<html>
+<body>
+<script type="text/javascript"> 
+
+// Program name: Selection sort 
+// Purpose: Use a selection sort on an array 
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-22
+
+// Declare constants and variables 
+var BR = "<br />"; // line break 
+var ARRAYSIZE = 6; // array size 
+var currEl; // array positions to fill 
+var index; //array index 
+var minValue; // current lowest value 
+var minPosition; // position of minimum 
+var temp; // swap variable 
+
+// declare and initialize the array 
+var someNums = new Array(8, 3, 9, 6, 10, 2);
+
+// Identify the sorting method
+// Display the array before sorting 
+document.write("SELECTION SORT" + BR);
+document.write("Before sorting:" + BR); 
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+
+// outer loop designates a position from first to last  element 
+for (currEl = 0; currEl < ARRAYSIZE; currEl++) {
+   minValue = someNums[currEl];
+   minPosition = currEl; 
+   
+   // inner loop steps through array finding smallest value 
+   for (index = currEl + 1; index < ARRAYSIZE; index++) {
+      if (someNums[index] < minValue) {
+	     minValue = someNums[index]; 
+		 minPosition = index; 
+		}
+	}
+	
+	// swap minimum value with element at designated position if different 
+	if (minPosition != currEl) {
+	   temp = someNums[currEl] 
+	   someNums[currEl] = someNums[minPosition] 
+	   someNums[minPosition] = temp; 
+	}
+}
+
+// Display the array after sorting 
+document.write("After sorting:" + BR); 
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR); 
+}
+
+</script>
+</body>
+</html>

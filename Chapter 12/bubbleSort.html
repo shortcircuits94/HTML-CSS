@@ -1,0 +1,50 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Program Name: Bubble Sort 
+// Purpose: Use a bubble sort on an array 
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-22
+
+// Declare constants and variables 
+var BR = "<br />"; // html line break 
+var ARRAYSIZE = 6; // array size 
+var maxElement;  // last element in pass 
+var index; /// array index 
+var temp; // swap varible 
+
+// declare and initialize new array 
+var someNums = new Array(8, 3, 9, 6, 10, 2);
+
+// Idenitfy the sorting method 
+// Display the array before sorting 
+document.write("BUBBLE SORT" + BR);
+document.write("Before sorting: " + BR);
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+// Outer loop works from last array element down to the first 
+/// inner loop steps through array, comparing and swapping elements if necessary 
+for (maxElement = ARRAYSIZE - 1; maxElement > 0; maxElement--) {
+   for (index = 0; index < maxElement; index++) {
+      if (someNums[index] > someNums[index + 1]) {
+	     temp = someNums[index];
+		 someNums[index] = someNums[index + 1];
+		 someNums[index + 1] = temp; 
+		}
+	}
+}
+
+
+// display the array after sorting 
+document.write("After sorting:" + BR);
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+// Program Name: Account Class 
+// Purpose: Pseudocode for defining a class
+// Author: Rebecca Scott 
+// Date last modified: 2016-12-06
+
+
+Class Account
+
+// Declare class variables 
+String acctType // account type 
+Numeric acctNumber // account number 
+String lastName // owner's last name 
+String firstName // owner's first name 
+Numeric acctBal // account balance 
+
+// Constructor method with fire parameters
+Constructor Method Account(String type, String Numeric num, String lName, String fName, Numeric bal)
+	acctType = type
+	acctNumber = num 
+	lastName = lName 
+	firstName = fName
+	acctBal = bal 
+End Method 
+
+End Class 
+
+
+Start 
+// State program purpose 
+Display "Account program"
+Display "This program creates an account"
+
+// Create an account object 
+Account mySavingsAcct = new Account ("S", 1376433, "Dunes", "Sandi", 80.00)
+
+//Thank the user 
+Display "Thank you!"
+
+Stop 

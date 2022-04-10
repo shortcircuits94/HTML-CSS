@@ -1,0 +1,30 @@
+// Program name: Recycling Calculator
+// Purpose: To calculate how many pounds of newspaper they need each day to make the total needed
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+Start
+
+// Variables and constants
+Declare Numeric totalNews //  total Newspapers
+Declare Numeric dailyNews // daily Newspapers
+Declare Numeric daysPar // days participated this week
+
+// Program Heading
+Display "Morning Buzz Coffee Shop Recycling Calculator"
+
+// Get total number of pounds needed and amount of days from user
+Display "Enter total number of pounds of newspaper needed"
+Input count1
+Display "Enter the amount of days"
+Input count2
+Display "Enter the amount of newspapers brought in today"
+Input count3
+
+// Calculate the amount of pounds
+dailyNews = totalNews /daysPar
+Display "Amount of pounds of newpapers needed daily" +dailyNews
+
+Display "Thank you for using this program!"
+
+Stop

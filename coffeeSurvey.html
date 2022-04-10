@@ -1,0 +1,53 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Coffee Survey
+// Purpose: Accumulate totals for three categories
+// Author: Rebecca Scott
+// Date last modified: 2016-10-15
+
+// Declare variables and constants
+   var cardCat; // card category (M=morning, A=afternoon, E=evening)
+   var numCards; // single entry of card numbers
+   var morningTotal = 0;  // total of morning cards
+   var afternoonTotal = 0; // total of afternoon cards
+   var eveningTotal = 0; // total of evening cards
+   var BR = "<br />"; // line break 
+   var PA = "<p />"; // paragraph line break 
+   var ES = ""; // empty string 
+   
+   // Welcome user, start loop, ask for first card category
+   document.write("Mack's Coffee Cove Survey Tabulation" + BR);
+   cardCat = prompt("Enter the category for the first batch of cards (M, A, or E) or Q to quit: ",ES);
+   
+   // Start the loop, ask for number of cards in category
+   while (cardCat != "Q") {
+      numCards = prompt("Enter the number of cards in this batch: ",ES);
+      numCards = parseInt(numCards);
+	  
+	  
+      // Determine the category and add to that category total
+      if (cardCat == "M") {
+         morningTotal = morningTotal + numCards
+		 }
+      else if (cardCat == "A") {
+         afternoonTotal = afternoonTotal + numCards
+		 }
+      else if (cardCat == "E") {
+         eveningTotal = eveningTotal + numCards
+         }
+		 
+		 // Ask for next card category, end loop
+      cardCat = prompt("Enter the category for the next batch of cards (M, A, or E) or Q to quit: ",ES);
+      
+    }
+	
+	   // Display totals
+   document.write("Total # of morning cards: " + morningTotal + BR);
+   document.write("Total # of afternoon cards: " + afternoonTotal + BR);
+   document.write("Total # of evening cards: " + eveningTotal + BR);
+   
+</script>
+</body>
+</html>

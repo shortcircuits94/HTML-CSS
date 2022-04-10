@@ -1,0 +1,61 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Buzz Buttons Order Calculator
+// Purpose: Calculate and display customers order information
+// Author: Rebecca Scott
+// Date last modified: 2016-09-29
+
+
+// Declare variables 
+var buttonName; // name of the button
+var emailAddress; // customers email address
+var numButtons; // number of buttons
+var totButtonCost; // total button cost
+var totSalesCost; // total button cost with sales tax
+var salesTax; // sales tax calculated
+var totCost; // final cost including tax and shipping
+
+//Declare Constants
+var SALES_TAX = 0.06 // 6% sales taxt
+var FLAT_SHIP = 2.00 // Shipping rate of $2.00
+var BUTTON_COST = 0.99 // $0.99 per button
+
+// Declare Constants (Display)
+var ES = ""; // literal empty string
+var BR = "<br/>"; // HTML line break 
+var PA = "<p />";    // HTML paragraph break
+
+
+
+
+// Welcome the user and ask customer for button name, email address, and number of buttons
+document.write("Welcome to Buzz Buttons!" + PA);
+buttonName = prompt("Enter your name for the button: ",ES);
+emailAddress = prompt("Enter your email address: ",ES);
+numButtons = prompt("Enter the number of buttons: ",ES);
+numButtons = parseInt(numButtons);
+
+// Calculate cost of total buttons, sales tax of order and total including shipping
+totButtonCost = numButtons * BUTTON_COST;
+salesTax = totButtonCost * SALES_TAX;
+totSalesCost = totButtonCost + SALES_TAX;
+totCost = totSalesCost + FLAT_SHIP;
+
+// Display user input and show totals
+document.write("The name of the button is: " + buttonName + BR);
+document.write("The email address entered is: " + emailAddress + BR);
+document.write("The number of buttons ordered: " + numButtons + BR);
+document.write("The button price total: $" + totButtonCost.toFixed(2) + BR);
+document.write("The 6% sales tax is: $" + salesTax.toFixed(2) + BR);
+document.write("The flat shipping rate is: $" + FLAT_SHIP + BR);
+document.write("The order total is: $" + totCost.toFixed(2) + PA);
+
+// Thank the user and end the program 
+document.write("Thank you for your order!" + BR);
+
+
+</script>
+</body>
+</html>

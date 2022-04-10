@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+// Program name: String Javascript Sort 
+// Purpose: use javascript's built in sort() method on string data 
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-22
+
+// function to force numeric sort 
+function numericSort(a, b) {
+   return a - b; 
+}
+
+
+</script>
+</head> 
+
+<body> 
+<script type="text/javascript"> 
+
+
+// Declare constants and variables 
+var BR = "<br />"; // line break 
+var ARRAYSIZE = 6; // array size 
+var index; // general array index 
+
+// declare and initialize array 
+var someNums = new Array(8, 3, 9, 6, 10, 2);
+
+// Idenitfy the sorting method
+// display the array before sorting 
+document.write("JAVASCRIPT SORT WITH NUMERIC ARRAY" + BR); 
+document.write("AND SORTING FUNCTION REFERENCE" + BR);
+document.write("Before sorting: " + BR);
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+
+// Call javascript sort() method
+someNums.sort(numericSort);
+
+// Display the array after sorting 
+document.write("After sorting:" + BR); 
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+</script>
+</body>
+</html>

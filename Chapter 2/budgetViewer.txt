@@ -1,0 +1,41 @@
+// Program Name: Budget Viewer
+// Purpose:
+// Author: Rebecca Scott
+// Last date modified: September 19, 2016
+
+// Declare variables and constants
+Declare Numeric sum1, sum2, sum3, sum4 // bill amounts entered
+Declare Numeric totBills // Total bills
+Declare Numeric  per1, per2, per3, per4 // percentage amounts
+Declare Constant PER_CENT = 100 // Multiply by 100 
+
+
+// Program Heading
+Display "Budget Viewer"
+
+// Enter the amount of each bill
+Display "Enter rent payment:"
+Input sum1
+Display "Enter food costs:"
+Input sum2
+Display "Enter utilities cost:"
+Input sum3
+Display "Enter all other costs:"
+Input sum4
+
+
+//Compute the totals, calculate the percentages and display results
+totBills = sum1+sum2+sum3+sum4
+per1 = (sum1 / totBills) * PER_CENT
+per2 = (sum2 / totBills) * PER_CENT
+per3 = (sum3 / totBills) * PER_CENT
+per4 = (sum4 / totBills) * PER_CENT
+Display "The totalled bills: $ + totBills"
+Display "The percentage of rent % + per1"
+Display "The percentage of rent % + per2"
+Display "The percentage of rent % + per3"
+Display "The percentage of rent % + per4"
+
+//Thank the user and end the program.
+Display "Thank you for using this program!"
+Stop

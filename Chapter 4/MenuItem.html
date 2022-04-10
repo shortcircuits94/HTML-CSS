@@ -1,0 +1,60 @@
+<html>
+<head>
+<script type="text/javascript">
+
+// Program name: MenuItem.txt
+// Purpose: Pseudocode for defining the MenuItem class
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-08
+
+
+// constants
+var BR = "<br />"; // html line break 
+var PA = "<p />";    // HTML paragraph break
+
+
+// Constructor method with three arguments
+function MenuItem(name, cat, price) {
+   this.itemName = name;
+   this.category = cat;
+   this.itemPrice = price;
+   this.displayInfo = displayInfo;
+}
+
+// Method to display all information about the menu item
+function displayInfo() {
+   document.write("Item name: " + this.itemName + BR);
+   document.write("Category: " + this.category + BR);
+   document.write("Price: " + this.itemPrice + PA);
+}
+   
+</script>
+</head>
+
+
+<body>
+<script type="text/javascript">
+
+// Welcome the user
+document.write("Welcome to the Menu Maker!" + PA);
+
+// Create four menu item objects
+var pastrami = new MenuItem("Pastrami", "Sandwich", 4.95);
+var ham = new MenuItem("Ham", "Sandwich", 5.25);
+var milkShake = new MenuItem("Milk shake", "Drink", 2.95);
+var softDrink = new MenuItem("Soft drink", "Drink", 1.49);
+
+
+// Display the information for all menu items
+pastrami.displayInfo();
+ham.displayInfo();
+milkShake.displayInfo();
+softDrink.displayInfo();
+
+// Thank the user
+document.write("Thank you!" + PA);
+
+</script>
+</body>
+</html>
+

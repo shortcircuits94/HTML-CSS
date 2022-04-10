@@ -1,0 +1,33 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Timer 
+// Purpose: Use date objects to calculate elapsed time in milliseconds
+// Author: Rebecca Scott 
+// date: 2016-11-16
+
+// declare varibles 
+var index; // loop index
+var x; // variable for division problem 
+var d1, d2; // date variables 
+
+// set stating time 
+d1 = new Date();
+
+// LOOP TO PASS time 
+for (index = 0; index < 6000000; index++) {
+   x = 123.456789 / 987.654321;
+}
+
+
+// set ending time 
+var d2 = new Date();
+
+// compute and display elapsed time 
+var diff = d2 - d1; 
+document.write("Difference in time is: " + diff + " milliseconds");
+
+</script>
+</body>
+</html>

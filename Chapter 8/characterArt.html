@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+function displayStars() {
+   // Declare variables
+   var num;     // # asterisks in a row
+   var index;   // loop variable
+   var BR = "<br />"; // html line break 
+   var ES = ""; // empty strimg
+
+   // Ask for number of asterisks, display
+   // The num and index variables are local
+   num = prompt("How many asterisks in this row? ",ES);
+   num = parseInt(num)
+   for (index = 1 to num
+      Display "*"
+   End For
+End Module
+
+// Program name: Character Art
+// Purpose: Display patterns of keyboard characters
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+Start
+   // Declare variables
+   Declare Numeric num      // # rows to display
+   Declare Numeric index    // loop variable
+
+   // Display program heading, ask for # of rows
+   Display "Character Art program."
+   Display "Display rows of keyboard characters."
+   Display "The character is the asterisk, *."
+   Display "You choose the length of each row."
+   Display
+   Display "How many rows do you want? "
+   Input num
+
+   // Call the module for the # of rows
+   For index = 1 to num
+      Call displayStars()
+   End For
+
+   // Thank the user and end the program
+   Display "Thank you!"
+Stop
+

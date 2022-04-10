@@ -1,0 +1,41 @@
+<html>
+<body>
+<script type="text/javascript">
+
+//Program Name: Auto Sales Stats
+//Purpose: Calculate the average yearly sales
+//Author: Rebecca Scott
+//Last date modified: September 19, 2016
+
+//Declare variables and constants
+var sum1, sum2, sum3, sum4; // quarterly earnings
+var totSales; // total sales for the year
+var avgSales; // average sales for the year
+var CAL_QUARTER = 4; // quarters for the year
+var BR = "<br />"; // HTML line break
+var ES = ""; // empty string
+
+// Program Heading
+document.write("Bennet's Used Auto Sales Quarterly Earnings" + BR);
+
+// Get the quarterly earnings
+sum1 = prompt("Enter amount of first quarter:",ES);
+sum1 = parseFloat(sum1);
+sum2 = prompt("Enter amount of second quarter:",ES);
+sum2 = parseFloat(sum2);
+sum3 = prompt("Enter amount of third quarter:",ES);
+sum3 = parseFloat(sum3);
+sum4 = prompt("Enter amount of fourth quarter:",ES);
+sum4 = parseFloat(sum4);
+
+// Calculate the total, the average and display results
+totSales = sum1 + sum2 + sum3 + sum4;
+avgSales = totSales / CAL_QUARTER;
+document.write("The average quarterly sales is: $" + avgSales.toFixed(2) + BR);
+
+// Thank the user and end the program
+document.write("Thank you for using this program!" + BR);
+
+</script>
+</body>
+</html>

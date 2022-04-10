@@ -1,0 +1,47 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Null Tester
+// Purpose: handles a user entering null data
+// Author: Rebecca Scott 
+// Date: 2016-11-27
+
+// Declare variables and constants 
+var userInputText; // user input
+var userInputNum; // input converted to number 
+var ES = ""; // empty string 
+var BR = "<br />" // HTML line break 
+var MSG = "JavaScript says the variable = "; // messAGE TEXT CONSTANT
+
+// Get input and test it as entered 
+userInputText = prompt("Enter a number and press Enter:",ES);
+document.write("You entered: " + userInputText + BR);
+
+if (userInputText == null) {
+   document.write(MSG + "null" + BR);
+}
+if (userInputText == ES) {
+   document.write(MSG + "an empty string" + BR);
+}
+if (isNaN (userInputText)) {
+   document.write(MSG + "NaN" + BR);
+}
+
+// conver input to a number and test it
+userInputNum = parseFloat(userInputText);
+document.write("You entry converted to a number is:" + userInputNum + BR);
+
+if (userInputNum == null) {
+   document.write(MSG + "null" + BR);
+}
+if (userInputNum == ES) {
+   document.write(MSG + "an empty string" + BR);
+}
+if (isNaN (userInputNum)) {
+   document.write(MSG + "NaN" + BR);
+}
+
+</script>
+</body>
+</html>

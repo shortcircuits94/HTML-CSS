@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+
+// Program name characterArt.html
+// Purpose: Display patterns of keyboard characters
+// Author: Rebecca Scott
+// Date last modified: 2016-10-25
+
+function displayStars() {
+   // Declare variables and constants
+   var num; // # asterisks in a row 
+   var index; // loop variable 
+   var BR = "<br />"; // html line break 
+   var ES = ""; // empty string for prompt 
+   
+   // Ask for number of asterisks and display horizontally 
+   document.write(BR);
+   num = prompt("How many asterisks in this row?",ES);
+   
+   for (index = 1; index <= num; index ++) {
+      document.write("*");
+   }
+}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+// Declare variables and constants 
+var num; // # rows to display 
+var index; // loop variable 
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string for prompt 
+
+// Display program heading, ask for # of rows 
+document.write("Character Art Program." + BR);
+document.write("Display rows of keyboard characters." + BR);
+document.write("The character is the asterisk, *." + BR);
+document.write("You choose the length of each row." + BR);
+num = prompt("How many rows do you want?",ES);
+
+// Call the function for # of rows 
+for (index = 1; index <= num; index++) {
+   displayStars();
+}
+
+// Thank the user, end the program 
+document.write(BR + "Thank you!" + BR);
+
+</script>
+</body>
+</html>

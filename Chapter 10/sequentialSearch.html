@@ -1,0 +1,45 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Declare variables 
+var SIZE = 5000000;
+var numberArray = new Array(SIZE); 
+var index; 
+var found = false; // 
+var searchNumber; 
+var numComparisons = 0;                     // number of comparisons in search
+var BR = "<br />";                                // HTML line break
+var ES = "";  
+
+
+// populate the array with integers in ascending order
+for (index = 0; index < SIZE; index++) {
+   numberArray[index] = index + 1;
+}
+
+//
+
+searchNumber = prompt("Enter a number between 1 to 5000000: ",ES);
+index = 0;
+
+// 
+while(index < SIZE && (!found)) {
+   numComparisons++; 
+    if (numberArray[index] == searchNumber) {
+	  found = true; 
+	  document.write("Match found at subscript: " + index + BR);
+	}
+	index++;
+}
+
+if (!found) {
+   document.write("No match found:" + BR);
+}
+
+document.write("Number of comparisons: " + numComparisons + BR);
+
+</script>
+</body>
+</html>

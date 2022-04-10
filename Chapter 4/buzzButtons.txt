@@ -1,0 +1,48 @@
+
+// Program Name: Buzz Buttons Order Calculator
+// Purpose: Calculate and display customers order information
+// Author: Rebecca Scott
+// Date last modified: 2016-09-29
+
+Start
+
+// Declare variables and constants
+Declare String buttonName // name of the button
+Declare String emailAddress // customers email address
+Declare Numeric numButtons // number of buttons
+Declare Numeric totButtonCost // total button cost
+Declare Numeric totSalesCost // total button cost with sales tax
+Declare Numeric salesTax // sales tax calculated
+Declare Numeric totCost // final cost including tax and shipping
+Declare Constant SALES_TAX = 0.06 // 6% sales taxt
+Declare Constant FLAT_SHIP = 2.00 // Shipping rate of $2.00
+Declare Constant BUTTON_COST = 0.99 // $0.99 per button
+
+// Program Heading
+Display "Welcome to Buzz Buttons!"
+
+// Ask customer for button name, email address, and number of buttons
+Display "Enter your name for the button:"
+Display "Enter your email address:"
+Display "Enter the number of buttons:"
+Input numButtons
+
+// Calculate cost of total buttons, sales tax of order and total including shipping
+totButtonCost = numButtons * BUTTON_COST
+salesTax = totButtonCost * SALES_TAX
+totSalesCost = totButtonCost + SALES_TAX
+totCost = totSalesCost + FLAT_SHIP
+
+// Display user input and show totals
+Display "The name of the button is: " + buttonName
+Display "The email address entered is: " + emailAddress
+Display "The number of buttons ordered: " + numButtons
+Display "The button price total: " + totButtonCost
+Display "The %6 sales tax is: " + salesTax
+Display "The flat shipping rate is: " + FLAT_SHIP
+Display "The order total is: " + totCost
+
+// Thank the user and end the program
+Display "Thank you!"
+
+Stop

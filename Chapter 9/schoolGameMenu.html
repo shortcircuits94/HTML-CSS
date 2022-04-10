@@ -1,0 +1,264 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Program name: School Game Menu
+// Purpose: Uses a menu system to play games
+// in Arithmetic and Geography
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+   // Declare variables
+   var menuChoice;   // user's selection
+   var BR = "<br />"; // html line break 
+   var ES = ""; // empty string 
+
+   // Display program heading
+   document.write("School Games Menu" + BR);
+
+   // Loop until user exits menu
+   do {
+      // Call function to display menu, get user
+      // selection, and convert to uppercase
+      menuChoice = displayMenu();
+      menuChoice = toUpper(menuChoice);
+      if (menuChoice == "A") {
+         arithmeticMenu();
+		}
+      else if (menuChoice == "G") {
+         geographyMenu();
+		}
+      else if (menuChoice != "X") {
+         document.write("Invalid selection:" + BR);
+         document.write("Please enter A, G, or X: " + BR);
+        }
+   while (menuChoice != "X") 
+   }
+
+   // Say goodbye and end program
+   document.write("Goodbye!" + BR):
+</script>
+</body>
+</html>
+
+<head>
+<script type="text/javascript">
+// Display menu function
+function displayMenu() {
+   // Declare variables, display menu,
+   // get selection
+   Declare String choice
+   Display "Enter A to play Arithmetic games,"
+   Display "         G to play Geography games,"
+   Display "     or X to exit this program. "
+   Input choice
+   Return choice
+}
+
+// Arithmetic menu module
+Module arithmeticMenu()
+   // Declare variables
+   Declare String subMenuChoice
+
+   // Loop until user exits this menu
+   // and returns to main menu
+   Do
+      // Call function to display submenu,
+      // get user selection, and convert to uppercase
+      subMenuChoice = displayArithmeticMenu()
+      subMenuChoice = toUpper(subMenuChoice)
+      If subMenuChoice == "A" Then
+         playAddition()
+      Else If subMenuChoice == "S" Then
+         playSubtraction()
+      Else If subMenuChoice != "X" Then
+         Display "Invalid selection:"
+         Display "Please enter A, S, or X: "
+      End If
+   While subMenuChoice != "X"
+End Module
+
+// Function to display arithmetic menu
+Function Numeric displayArithmeticMenu()
+   // Declare variables, display menu, get selection
+   Declare String choice
+   Display "Enter A for Addition,"
+   Display "         S for Subtraction,"
+   Display "     or X to exit this menu: "
+   Input choice
+   Return choice
+End Function
+
+Module geographyMenu()
+   // Declare variables
+   Declare String subMenuChoice
+
+   // Loop until user exits this menu
+   // and returns to main menu
+   Do
+      // Call function to display submenu,
+      // get user selection, and convert to uppercase
+      subMenuChoice = displayGeographyMenu()
+      subMenuChoice = toUpper(subMenuChoice)
+      If subMenuChoice == "G" Then
+         playGuessTheCountry()
+      Else If subMenuChoice == "N" Then
+         playNameTheCountry()
+      Else If subMenuChoice != "X" Then
+         Display "Invalid selection:"
+         Display "Please enter G, N, or X: "
+      End If
+   While subMenuChoice != "X"
+End Module
+
+// Function to display geography menu
+Function Numeric displayGeographyMenu()
+   // Declare variables, display menu,
+   // get selection
+   Declare String choice
+   Display "Enter G to play Guess the Country,"
+   Display "         N to play Name the Capital,"
+   Display "     or X to exit this menu. "
+   Input choice
+   Return choice
+End Function
+
+// Addition module
+Module playAddition()
+   // Declare variables
+   Declare Numeric num1, num2   // random numbers
+   Declare Numeric correctSum   // correct answer
+   Declare Numeric userGuess     // user's guess
+   
+   // Get numbers, compute correct sum
+   num1 = Random(1,100)
+   num2 = Random(1,100)
+   correctSum = num1 + num2
+
+   // Prompt user for sum and 
+   //   compare with correct answer
+   // Display result and correct answer
+   //   if user is wrong
+   Display "What is " + num1 " + " + num2 + "? "
+   Input userGuess
+   If userGuess == correctSum Then
+      Display "That is correct!"
+   Else
+      Display "Sorry. The correct answer is " + correctSum
+   End If
+End Module
+
+// Subtraction 
+Module playSubtraction()
+   // Declare variables
+   Declare Numeric num1, num2    // random numbers
+   Declare Numeric temp               // swap variable 
+   Declare Numeric correctDiff      // correct answer
+   Declare Numeric userGuess       // user's guess
+   
+   // Get numbers, swap if second number is higher
+   //   to keep answer from being negative
+   // Compute correct difference
+   num1 = Random(1,100)
+   num2 = Random(1,100)
+   If num2 > num1 Then
+      temp = num1
+      num1 = num2
+      num2 = temp
+   End If
+   correctDiff = num1 - num2
+
+   // Prompt user for difference and
+   //   compare with correct answer
+   // Display result and correct answer
+   //   if user is wrong
+   Display "What is " num1 +  " - " + num2 + "? "
+   Input userGuess
+   If userGuess == correctDiff Then
+      Display "That is correct!"
+   Else
+      Display "Sorry. The correct answer is " + correctDiff
+   End If
+End Module
+
+// Guess the Country module
+Module playGuessTheCountry()
+   // Declare variables
+   Declare String city                     // city clue
+   Declare String correctCountry   // right answer
+   Declare String userGuess          // user's guess
+   Declare Numeric randomNum  // selection
+  
+   // Use random number to select city and country
+   randomNum = Random(1,5)
+   Select randomNum
+   Case 1:
+      city = "Hamburg"
+      correctCountry = "GERMANY"
+   Case 2:
+      city = "Osaka"
+      correctCountry = "JAPAN"
+   Case 3:
+      city = "Liverpool"
+      correctCountry = "ENGLAND"
+   Case 4:
+      city = "Rio de Janeiro"
+      correctCountry = "BRAZIL"
+   Case 5:
+      city = "Mombasa"
+      correctCountry = "KENYA"
+   End Select
+   
+   // Display city name, ask for country
+   // Convert user's guess to uppercase
+   Display "In what country is " + city + " located?"
+   Input userGuess
+   userGuess = toUpper(userGuess)
+   If userGuess == correctCountry Then
+      Display "That is correct!"
+   Else
+      Display "Sorry. The correct answer is " + correctCountry
+   End If
+End Module
+
+// Name the Capital module
+Module playNameTheCapital()
+   // Declare variables
+   Declare String country              // country clue
+   Declare String correctCapital    // right answer
+   Declare String userGuess          // user's guess
+   Declare Numeric randomNum  // selection
+   
+   // Use random number to select
+   //   country and capital
+   randomNum = Random(1,5)
+   Select randomNum
+      Case 1:
+         country = "Afghanistan"
+         correctCapital = "KABUL"
+      Case 2:
+         country = "Austria"
+         correctCapital = "VIENNA"
+      Case 3:
+         country = "Canada"
+         correctCapital = "OTTAWA"
+      Case 4:
+         country = "Finland"
+         correctCapital = "HELSINKI"
+      Case 5:
+         country = "Portugal"
+         correctCapital = "LISBON"
+   End Select
+   
+   // Display country name, ask for capital
+   // Convert user's guess to uppercase
+   Display "What is the capital of " + country + "? "
+   Input userGuess
+   userGuess = toUpper(userGuess)
+   If userGuess == correctCapital Then
+      Display "That is correct!"
+   Else
+      Display "Sorry. The correct answer is " + correctCapital
+   End If
+End Module

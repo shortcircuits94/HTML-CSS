@@ -1,0 +1,63 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Consulting Invoice 
+// Purpose: Create invoices for Watt Gives
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+
+//Variables and constants
+var hoursWorked; // Hours worked daily
+var count1, count2, count3, count4, count5; // Number of hours worked
+var totRate; // Total pay rate
+var totHour; // Total hours worked
+var bcompName; // Billed company name
+var PAY_RATE = 30; // pay rate per hour
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string 
+
+// Program Heading
+document.write("Watt Gives Invoicing" + BR);
+
+// Get billed company name
+compName = prompt("Enter name of company to be billed",ES);
+
+
+// Get hourly rate 
+payRate = prompt("Enter rate billed by hour",ES);
+payRate = parseFloat(payRate);
+
+//Get number of hours worked everyday
+count1 = prompt("Enter number of hours worked on Day 1",ES);
+count1 = parseInt(count1);
+count2 = prompt("Enter number of hours worked on Day 2",ES);
+count2 = parseInt(count2);
+count3 = prompt("Enter number of hours worked on Day 3",ES);
+count3 = parseInt(count3);
+count4 = prompt("Enter number of hours worked on Day 4",ES);
+count4 = parseInt(count4);
+count5 = prompt("Enter number of hours worked on Day 5",ES);
+count5 = parseInt(count5);
+
+// Calculate total hours and total pay rate
+totHour = count1 + count2 + count3 + count4 +count5
+totRate = totHour * PAY_RATE
+
+// Display invoice information
+document.write("Watt Gives Invoice" + BR);
+document.write("Invoice statement for " + compName + BR);
+document.write("Hourly Rate: " + payRate + BR);
+document.write("Hours Worked: " + totHour + BR);
+document.write("Total Amount Billed: " + totRate + BR);
+
+// Close Program
+document.write("Thank you for using this program!" + BR);
+
+</script>
+</body>
+</html>
+
+
+

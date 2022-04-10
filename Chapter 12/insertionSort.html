@@ -1,0 +1,55 @@
+<html>
+<body> 
+<script type="text/javascript"> 
+
+// Program name: Insertion Sort 
+// Purpose: use an insertion sory on an array 
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-22
+
+// Declare constants and variables 
+var BR = "<br />"; // line break 
+var ARRAYSIZE = 6; // array size 
+var pulledIndex; // index of element to place 
+var pulledValue; // value of element to place 
+var insetIndex; // index of element shifted 
+var insertValue; // value of element shifted 
+var index; // general array index 
+
+// Declare and initialize the array 
+var someNums = new Array(8, 3, 9, 6, 10, 2)
+
+
+// Identify the sorting method 
+// display the array before sorting 
+document.write("INSERTION SORT:" + BR);
+document.write("Before sorting:" + BR); 
+for (index = 0; index < ARRAYSIZE; index++) {
+   document.write(someNums[index] + BR);
+}
+
+// loop pulls each element from1 to the end of the array
+for (pulledIndex = 1; pulledIndex < ARRAYSIZE; pulledIndex++) {
+  pulledValue = someNums[pulledIndex]
+  insertIndex = pulledIndex; 
+  
+  // if element to the left is greater, 
+  // shift it to the right 
+  // and look at next element to the left 
+  while (insertIndex > 0 && someNums[insertIndex -1] > pulledValue) {
+     someNums[insertIndex] = someNums[insertIndex - 1];
+	 insertIndex = insertIndex - 1;
+   }
+   // insert the pulled value when shifting ends
+   someNums[insertIndex] = pulledValue; 
+}
+
+// display the array after sorting 
+document.write("After sorting:" + BR); 
+for (index = 0; index < ARRAYSIZE; index++) { 
+   document.write(someNums[index] + BR); 
+}
+
+</script> 
+</body> 
+</html> 

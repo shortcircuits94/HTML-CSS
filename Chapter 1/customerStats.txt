@@ -1,0 +1,36 @@
+// Program name: Customer Statistics 
+// Purpose: Compute total and average number of customers over 4 hours 
+// Author: Rebecca Scott 
+// Date: 2016-11-08
+
+Start 
+// Variables and constants
+Declare Numeric totCust // total customers 
+Declare Numeric avgCust // averae customers 
+Declare Numeric count1, count2, count3, count4 // count of customers each hour 
+Declare Constant NUM_HOURS = 4 // number of hours 
+
+
+// Program heading 
+Display "Sunshine Books Customer Statistics Program 
+
+// Get number customers for each hour 
+Display "Enter the # of customers for the first hour: "
+Input count1
+Display "Enter the # of customers for the second hour: "
+Input count2
+Display "Enter the # of customers for the third hour: "
+Input count3
+Display "Enter the # of customers for the fourth hour: "
+Input count4
+
+//Compute total and average and display the result 
+totCust = count1 + count2 + count3 + count4
+avgCust = totCust / NUM_HOURS
+Display "Total number of customers: " + totCust 
+Display "Average customers per hour: " + avgCust
+
+// Thank the user and end the program 
+Display "Thank you for using this program. Good-bye!"
+
+Stop

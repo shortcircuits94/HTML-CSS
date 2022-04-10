@@ -1,0 +1,35 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Program name: numStudentsForLoop.html
+// Purpose: A for loop to enter student numbers 
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-04
+
+// Variables and constants 
+var numStudent; // number of students to add 
+var index; // for loop index
+var studentName; // name of each student 
+var ES = ""; // literal empty string 
+var BR = "<br />"; // HTML line break
+var PA = "<p />"; // HTML paragraph break 
+
+// Identify program 
+document.write("Student name entry program." + PA);
+
+// Prompt for number of students to add 
+numStudents = prompt("Enter the number of student names to add:",ES);
+
+// For loop asks for names of students 
+for (index = 1; index <= numStudents; index++) {
+	studentName = prompt("Enter the name of Student #" + index,ES);
+}
+
+// Thank the user and enter the program 
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

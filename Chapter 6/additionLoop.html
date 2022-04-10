@@ -1,0 +1,42 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Addition Loop
+// Purpose: Use a Do While loop to add numbers
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+   // Declare variables
+   var num1, num2;   // numbers to add
+   var total;               // total of two numbers
+   var more;                  // more numbers to add?
+   var BR = "<br />"; // html line break 
+   var ES = ""; // empty string 
+   
+   
+   // Welcome the user, identify program
+   document.write("Welcome to this addition program." + BR);
+   document.write("It repeats until you choose to quit." + BR);
+
+   // Start loop, prompt for two numbers
+   do {
+      num1 = prompt("Enter the first number: ",ES);
+      num1 = parseFloat(num1);
+      num2 = prompt("Enter the second number: ",ES);
+      num2 = parseFloat(num2);
+
+      // Add numbers and display total
+      total = num1 + num2;
+      document.write("Sum of the numbers: " + total + BR);
+
+      // Ask whether to continue, end loop
+      more = prompt("More numbers to add (Y/N)? ",ES);
+      
+   } while (more == "Y");
+
+   // Thank the user and end the program
+   document.write("Thank you!" + BR);
+</script>
+</body>
+</html>

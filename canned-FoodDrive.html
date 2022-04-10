@@ -1,0 +1,38 @@
+<html>
+<body> 
+<script type="text/javascript">
+
+// Program name: Canned Food Drive 
+// Purpose: Use a loop to accumulate donations 
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-04
+
+// Declare variables
+var numCans; // cans for one donation 
+var totalCans = 0; // total cans donated 
+var ES = ""; // literal empty string 
+var BR = "<br />"; // HTML line break
+var PA = "<p />"; // HTML paragraph break 
+
+// Identify program and prompt for first donation 
+document.write("Canned Food Donation Program" + PA);
+numCans = prompt("Enter # of cans (or -1 to quit):",ES);
+numCans = parseInt(numCans);
+
+// Start loop, add cans to total, display running total 
+while (numCans != -1) {
+	totalCans = totalCans + numCans 
+	document.write("Total cans so far: " + totalCans + BR);
+	
+	// Prompt for next donations, end loop 
+	numCans = prompt("Enter # of cans (or -1 to quit):",ES);
+	numCans = parseInt(numCans);
+}  
+
+// Display final total, thank user, end program 
+document.write("Total # of cans donated:" + totalCans + BR);
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

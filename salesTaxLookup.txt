@@ -1,0 +1,50 @@
+// Program name: Sales Tax Lookup
+// Purpose: Using a list, find the sales tax required
+//   for purchases under $1.00
+// Author: [Your Name]
+// Date last modified: 2016-10-06
+
+Start
+   // Variables and constants
+   Declare Numeric cents       // number of cents of purchase
+   Declare Numeric salesTax    // amount of sales tax
+
+   // Welcome the user, ask for the amount of purchase
+   Display "This program looks up sales tax "
+   Display "for purchases under $1.00."
+   Display "Enter the amount of purchase, in cents: "
+   Input cents
+
+   // Determine amount of sales tax
+   If cents <= 8 Then
+      salesTax = 0
+   Else If cents <= 16 Then
+      salesTax = 1
+   Else If cents <= 32 Then
+      salesTax = 2
+   Else If cents <= 48 Then
+      salesTax = 3
+   Else If cents <= 64 Then
+      salesTax = 4
+   Else If cents <= 80 Then
+      salesTax = 5
+   Else If cents <= 88 Then
+      salesTax = 6
+   Else If cents <= 96 Then
+      salesTax = 7
+   Else If cents <= 99 Then
+      salesTax = 8
+   End If
+
+   // Display amount of sales tax
+   //   if amount of cents was 99 cents or under,
+   //   otherwise, display an error message
+   If cents <= 99 Then
+      Display "Sales tax is: " + salesTax + " cents."
+   Else
+      Display "Enter an amount less than $1.00."
+   End If
+
+   // Thank the user and end the program
+   Display "Thank you!"
+Stop

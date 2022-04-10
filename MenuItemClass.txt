@@ -1,0 +1,42 @@
+// Program name: MenuItem Class
+// Purpose: Pseudocode for defining the MenuItem class
+// Author: Rebecca Scott 
+// Date last modified: 2016-09-23
+
+Class MenuItem
+String itemName // name of menu item
+String category // item category (sandwich or drink)
+Numeric itemPrice // price of item
+// Constructor method MenuItem(String name, String cat, Numeric price)
+itemName = name 
+category = cat 
+itemPrice = price
+End Method 
+
+// Method to display all information about the menu item 
+Method displayInfo()
+Display "Item name " + itemName
+Display "Category " + category
+Display "Price of item: " + itemPrice
+End Method 
+End Class
+ 
+Start 
+// Welcome the user 
+Display "Welcome to the Menu Maker!"
+
+// Create four meno item objects
+MenuItem pastrami = new MenuItem ("Pastrami", "Sandwich", 4.95)
+MenuItem ham = new MenuItem ("Ham", "Sandwich", 5.25)
+MenuItem milkShake = new MenuItem ("Milk shake", "Drink", 2.95)
+MenuItem softDrink = new MenuItem ("Soft drink", "Drink", 1.49)
+
+// Display the information for all menu items
+pastrami.displayInfo()
+ham.displayInfo()
+milkShake.displayInfo()
+softDrink.displayInfo()
+
+// Thank the user
+Display "Thank you!"
+Stop

@@ -1,0 +1,77 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+// Program name: Shoe Rental Class
+// Purpose: Pseudocode for creating a
+// ShoeRental class
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+
+   // Variables
+   var shoeID;       // ID# (1000 to 9999)
+   var shoeSize;     // shoe size
+   var firstName;        // first name of renter
+   var lastName;        // last name of renter
+   var rentalDate;       // rent date (MM/DD/YYYY)
+   var rentalTime;       // rent time (HH:MM, 24-hr)
+   var numGames;  // number of games bowled
+   var rentalCost;   // rental cost ($2 per game)
+   var BR = "<br />"; // html line break 
+   var ES = ""; // empty string
+
+   // Constructor method for shoe rental
+   ShoeRental()
+      Display "Enter the shoe ID number: "
+      Input shoeID
+      Display "Enter the shoe size: "
+      Input shoeSize
+      Display "Enter renter's first name: "
+      Input firstName
+      Display "Enter renter's last name: "
+      Input lastName
+      Display "Enter date (MM/DD/YYYY): "
+      Input rentalDate
+      Display "Enter time (HH:MM): "
+      Input rentalTime
+      Display "How many games is renter bowling? "
+      Input numGames
+      rentalCost = computeRentalCost(numGames)
+   End Method
+
+   // Method to compute rental cost
+   Numeric computeRentalCost(Numeric games)
+      Constant Numeric COST_PER_GAME = 2
+      Declare Numeric cost
+      cost = games * COST_PER_GAME
+      Return cost
+   End Method
+
+  // Method to display info
+   displayInfo()
+      Display "Renter's name: " + firstName + " " + lastName
+      Display "Shoe ID: " + shoeID
+      Display "Shoe size: " + shoeSize
+      Display "Rental date: " + rentalDate
+      Display "Rental time: " + rentalTime
+      Display "Number of games bowled: " + numGames
+      Display "Cost of rental: " + rentalCost
+   End Method
+
+End Class
+
+Start
+
+   // Welcome the user
+   Display "Welcome to Lanes Galore Shoe Rentals"
+
+   // Rent a pair of shoes to a customer
+   ShoeRental nextCustomer = new ShoeRental()
+   nextCustomer.displayInfo()
+
+   // Thank the user
+   Display "Thank you!"
+
+Stop

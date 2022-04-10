@@ -1,0 +1,42 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Floor Tile Calculator 
+// Purpose: calculate and display rooms area in square feet and the cost of tile needed to cover the room
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+// Variables and Constants
+var totArea; // total area
+var totCost; // total cost of area
+var length; // length of the room
+var width; // width of the room
+var cost; // cost per square foot
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string 
+
+
+//Program Heading
+document.write("Zach Stern's Floor Tile Cost Calculator" + BR);
+
+// Get room's length and width and cost per square foot
+length = prompt("Enter the room's length",ES);
+length = parseFloat(length);
+width = prompt("Enter the room's width",ES);
+width = parseFloat(width);
+cost = prompt("Enter the cost per square foot",ES);
+cost = parseFloat(cost);
+
+// Calculate the room's area and the cost of tile needed
+totArea = length * width
+totCost = totArea * cost
+document.write("Area of the Floor: " + totArea.toFixed(2) + BR);
+document.write("Total cost of tile: $" + totCost.toFixed(2) + BR); 
+
+// Thank the user and end the program
+document.write("Thank you for using this program." + BR);
+
+</script>
+</body>
+</html>

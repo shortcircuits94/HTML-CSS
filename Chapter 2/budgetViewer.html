@@ -1,0 +1,46 @@
+<html>
+<body>
+<script type="text/javascript">
+
+//Program Name: Budget Viewer
+//Purpose:
+//Author: Rebecca Scott
+//Last date modified: September 19, 2016
+
+//Declare variables and constants
+var sum1, sum2, sum3, sum4; // bill amounts entered
+var totBills; // Total bills
+var  per1, per2, per3, per4; // percentage amounts
+var PER_CENT = 100; // Multiply by 100 
+var BR = "<br />"; // HTML line break
+var ES = ""; // empty string
+
+// Program Heading
+document.write("Welcome to Budget Viewer" + BR );
+
+
+// Enter the amount of each bill
+sum1 = prompt("Enter rent payment:",ES);
+sum1 = parseFloat(sum1);
+sum2 = prompt("Enter food costs:",ES);
+sum2 = parseFloat(sum2);
+sum3 = prompt("Enter utilities cost:",ES);
+sum3 = parseFloat(sum3);
+sum4 = prompt("Enter all other costs:",ES);
+sum4 = parseFloat(sum4);
+
+// Compute the totals, calculate the percentages and display results
+totBills = sum1+sum2+sum3+sum4;
+per1 = (sum1 / totBills) * PER_CENT;
+per2 = (sum2 / totBills) * PER_CENT;
+per3 = (sum3 / totBills) * PER_CENT;
+per4 = (sum4 / totBills) * PER_CENT;
+document.write("The totalled bills: $ " + totBills.toFixed(2) + BR);
+document.write("The percentage of rent % " + per1.toFixed(1) + BR);
+document.write("The percentage of rent % " + per2.toFixed(1) + BR);
+document.write("The percentage of rent % " + per3.toFixed(1) + BR);
+document.write("The percentage of rent % " + per4.toFixed(1) + BR);
+
+</script>
+</body>
+</html>

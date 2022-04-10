@@ -1,0 +1,66 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Sales Tax Lookup
+// Purpose: Using a list, find the sales tax required
+//   for purchases under $1.00
+// Author: Rebecca Scott
+// Date last modified: 2016-10-06
+
+   // Variables and constants
+   var cents;       // number of cents of purchase
+   var salesTax;    // amount of sales tax
+   var BR = "<br />"; // html line break
+   var ES = ""; // empty string 
+   
+   // Welcome the user, ask for the amount of purchase
+   document.write("This program looks up sales tax for purchases under $1.00." + BR);
+   cents = prompt("Enter the amount of purchase, in cents: ",ES);
+   cents = parseFloat(cents);
+
+   // Determine amount of sales tax
+   if (cents <= 8) {
+      salesTax = 0;
+	}
+   else if (cents <= 16) {
+      salesTax = 1;
+	}
+   else if (cents <= 32) {
+      salesTax = 2;
+	}
+   else if (cents <= 48) {
+      salesTax = 3;
+	}
+   else if (cents <= 64) {
+   salesTax = 4;
+    }
+   else if (cents <= 80) {
+      salesTax = 5;
+	}
+   else if (cents <= 88) {
+      salesTax = 6;
+	}
+   else if (cents <= 96) {
+      salesTax = 7;
+	}
+   else if (cents <= 99) {
+      salesTax = 8;
+   }
+
+   // Display amount of sales tax
+   //   if amount of cents was 99 cents or under,
+   //   otherwise, display an error message
+   if (cents <= 99) {
+      document.write("Sales tax is: " + salesTax + " cents." + BR);
+	}
+   else {
+      document.write("Enter an amount less than $1.00." + BR);
+    }
+
+   // Thank the user and end the program
+   document.write("Thank you!" + BR);
+   
+</script>
+</body>
+</html>

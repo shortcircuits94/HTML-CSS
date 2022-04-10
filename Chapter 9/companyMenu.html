@@ -1,0 +1,125 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+
+// Program name: Company Menu
+// Purpose: A menu system for customer service
+// and order processing
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+// variables for <head>
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string for prompt 
+var NL = "\n"; // new line
+// Customer Service menu
+// Customer Service menu
+function customerServiceMenu() {
+   // Declare variables
+   var subMenuChoice;
+
+   // Loop until user exits submenu
+   do {
+      // Display submenu, get choice, convert to upper case
+      subMenuChoice = prompt("Enter A to Add a new customer," + NL
+         + "      C to Change customer info," + NL
+         + "      D to Delete a customer, or" + NL
+         + "      Q to Quit this submenu:",ES);
+      subMenuChoice = subMenuChoice.toUpperCase();
+
+      // Process submenu choice
+      if (subMenuChoice == "A") addCustomer();
+      else if (subMenuChoice == "C") changeCustomer();
+      else if (subMenuChoice == "D") deleteCustomer();
+      else if (subMenuChoice != "Q") alert("Invalid selection: Please enter A, C, D, or Q.");
+   }  while (subMenuChoice != "Q");
+}
+
+// Order Processing menu
+function orderProcessingMenu() {
+   // Declare variables
+   var subMenuChoice;
+
+   // Loop until user exits submenu
+   do {
+      // Display submenu
+      subMenuChoice = prompt("Enter P for Placing an order," + NL
+         + "      I for Invoicing," + NL
+         + "      S for Shipping, or" + NL
+         + "      Q to Quit this submenu:",ES);
+      subMenuChoice = subMenuChoice.toUpperCase();
+
+      // Process submenu choice
+      if (subMenuChoice == "P") placeOrder();
+      else if (subMenuChoice == "I") invoiceOrder();
+      else if (subMenuChoice == "S") shipOrder();
+      else if (subMenuChoice != "Q") alert("Invalid selection: Enter P, I, S, or Q.");
+   }  while (subMenuChoice !+= "Q");
+}
+
+// Add Customer Record module (stub)
+function addCustomer() {
+   document.write("In Add Customer module" + BR);
+}
+
+// Change Customer Record module (stub)
+function changeCustomer() {
+   document.write("In Change Customer module" + BR);
+}
+
+// Delete Customer Record module (stub)
+function deleteCustomer() {
+   document.write("In Delete Customer Record module" + BR);
+}
+
+// Ordering module (stub)
+function placeOrder() {
+   document.write("In Place Order module" + BR);
+}
+
+// Invoicing module (stub)
+function invoiceOrder() {
+   document.write("In Invoicing module" + BR);
+}
+
+// Shipping module (stub)
+function shipOrder() {
+   document.write("In Shipping module" + BR);
+}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+<body>
+<script type="text/javascript">
+
+// Declare variables and constants
+var menuChoice;    // user's menu choice
+var NL = "\n";        // newline character
+var ES = "";           // empty string
+
+// Loop until user exits menu
+do {
+   // Display menu+
+   menuChoice = prompt("Enter C for the Customer Service menu," + NL
+      + "      O for the Order Processing menu, or" + NL
+      + "      Q to Quit this program.",ES);
+   menuChoice = menuChoice.toUpperCase();
+
+   // Call requested submenu or exit the program
+   if (menuChoice == "C") customerServiceMenu();
+   else if (menuChoice == "O") orderProcessingMenu();
+   else if (menuChoice != "Q") alert("Invalid selection: Please enter C, O, or Q:");
+}  while (menuChoice != "Q");
+
+// Say goodbye and end program
+document.write("Goodbye!" + BR);
+
+</script>
+</body>
+</html>

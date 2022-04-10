@@ -1,0 +1,105 @@
+// Program Name QuickTunesCustomer Class 
+// Purpose: Create class for QuickTunes customers 
+// Author: Rebecca Scott 
+// Date last modified: 2016-10-11
+
+Class QuickTunesCustomer
+
+// Variables 
+Numeric custNumber // customer number 
+String custLastName // last name 
+String custFirstName // first name 
+String custName // concatenated name 
+String custStreetAddr // street address 
+String custCity // city 
+String custState // state
+String custZip // zip code 
+Static Numeric newCustNum // number to assign 
+
+// Constructor method for new customer 
+Constructor Method QuickTunesCustomer (String 1Name, String fName, String strAddr, String city, String state, String zip)
+	// Assign customer # for next customer set by separate method 
+	// Increment # for next customer 
+	custNumber = newCustNum
+	newCustNum++
+	
+	// Set values for other variables 
+	custLastName = lName
+	custFirstName = fName 
+	custName = lName + " " + fName 
+  // cocatenate name 
+	custStreetAddr = strAddr 
+	custCity = city 
+	custState = state 
+	custZip 
+End Method 
+
+// Method to set starting customer number 
+Static Method setCustNum(Numeric startNum)
+	newCustNum = startNum
+End Method 
+
+// Method to display all customer information 
+Method displayInfo()
+	Display "Customer #: " + custNumber 
+	Display "Name: " + custName 
+	Display "Address: " + custStreetAddr
+	Display "City, State, Zip: " + custCity + "," + custState + "" + custZip
+ End Method 
+End Class 
+
+
+Start 
+
+	// Variables
+	Declare Numeric starNum // 1st customer #
+	Declare String lastName, firstName // customer name 
+	Declare String address // street address 
+	Declare String city, state, zip // more address info 
+	Declare Numeric numNewCusts = 0 // # new customers 
+	
+	// Program Header 
+	Display "QuickTunes New Customer Program"
+	
+	// Get next customer number from user 
+	// Call method to set starting customer #
+	Display "Enter starting customer number: "
+	Input lastName 
+	Call QuickTunesCustomer.setCustNum(startNum)
+	
+	//Priming prompt for new customer or quit
+	Display "Enter last name or Q to quit: "
+	
+	// Start loop to process new cutomers 
+	// Increment number of new customers 
+	While lastName != "Q"
+		numNewCusts++ 
+		
+		// Get new customer information 
+		Display "Enter customer's first name: "
+		Input firstName
+		Display "Enter customer's street address: "
+		Input address 
+		Display "Enter customer's city: "
+		Input city 
+		Display "Enter customer's state: "
+		Input state
+		Display "Enter customer's zip code: "
+		Input zip 
+		
+		// Call constructor to create new customer record 
+		// Call method to display information 
+		QuickTunesCustomer newCust = new QuickTunesCustomer(lastName, firstName, address, city, state, zip 
+		Call newCust.displayInfot()
+		
+		// Prompt for new customer, or quit and end loop 
+		Display "Enter last name or Q to quit: "
+		Input lastName
+	End While 
+	
+	//Display number of new customers 
+	// Thank the user, quit the program 
+	Display "# of new customers added: " + numNewCust
+	Display "Thank you!"
+	
+Stop 

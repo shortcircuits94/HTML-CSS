@@ -1,0 +1,30 @@
+// Program name: 2-D Temperature Array 
+// Purpose: Create and Populate a 2-D array for temperatures ROWS=weeks COLUMNS = weeks 
+// Author: Rebecca Scott 
+// Date: 2016-11-16
+
+Start
+// Declare variables 
+Declare constant WEEKS = 3 // # of weeks 
+Declare constant DAYS = 7 // # of days 
+Declare Numeric temps[WEEKS, DAYS] // 2-D array of temps 
+Declare Numeric weekIndex // index for week 
+Declare Numeric dayIndex // index for day 
+
+// prompt user to populate array 
+For weekIndex = 0 to WEEKS - 1
+   For dayIndex = 0 to DAYS - 1 
+      Display "Enter the temperature for Week " + (weekIndex + 1) + ", Day " (dayIndex + 1)
+	  Input temps[weekIndex.dayIndex]
+   End For
+End For 
+
+// Display array 
+For weekIndex = 0 to WEEKS - 1 
+   Display "Temperatures for Week " + (weekIndex + 1) + ": "
+   For dayIndex = 0 to DAYS - 1
+      Display temps[weekIndex,dayIndex] + " " 
+   End For 
+   Display
+End For 
+Stop

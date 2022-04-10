@@ -1,0 +1,78 @@
+// Program Name payrollCalc.txt
+// Purpose: Get payroll information, calculate
+// Author: Rebecca Scott
+// Date last modified: 2016-09-20
+
+Start
+// Declare variables
+Declare String firstName // employee's first name
+Declare String lastName // employee's last name 
+Declare String fullName // employee's full name
+Declare Numeric grossPay // gross pay
+Declare Numeric netPay // net pay
+Declare Numeric hoursWorked // hours worked
+Declare Numeric wageRate // wage rate
+Declare Numeric fedTaxWith // federal withholding
+Declare Numeric stateTaxWith // state withholding
+Declare Numeric countyTaxWith // county withholding
+Declare Numeric medInsDed // medical ins deduction
+Declare Numeric totDeductions // total deductions
+
+// Declare constants (withholding rates)
+Declare Constant FED_RATE = .15 // federal rate
+Declare Constant STATE_RATE = .034 // state rate
+Declare Constant COUNTY_RATE = .011 // county rate
+
+// Program heading
+Display "Employee Payroll Calculator"
+Display
+
+//Get employee's name, hours worked, and wage rate
+Display "Enter the employee's last name:"
+Input lastName
+Display "Enter the employee's first name:"
+Input firstName
+Display "Enter the number of hours worked:"
+Input hoursWorked
+Display "Enter the employee's hourly rate:"
+Input wageRate
+
+// Calculate the gross pay
+grossPay = hoursWorked * wageRate
+
+// Calculate federal, state, and county withholding
+fedTaxWith = grossPay * FED_RATE
+stateTaxWith = grossPay * STATE_RATE
+countyTaxWith = grossPay * COUNTY_RATE
+
+// Get the medical insurance deduction
+Display "Enter the medical insurance deduction:"
+Input medsInsDed
+
+// Calculate total deductions and net pay
+totDeductions = fedTaxWith + stateTaxWith + countyTaxWith + medInsDed
+netPay = grossPay - totDeductions
+
+// Concatenate first and last name
+fullName = firstName + " " + lastName
+
+// Display all information
+Display "Payroll information for: " + fullName
+Display "Hours worked: " + hoursWorked
+Display "Hourly wage rate: " + wageRate
+Display "Gross pay: $ " + grossPay
+Display 
+Display "Withholdings"
+Display "Federal income tax: $ " + fedTaxWith
+Display "State income tax: $ " + stateTaxWith
+Display "County income tax: $ " + countyTaxWith
+Display "Medical insurance: $ " + medInsDed
+Display "Total deductions: $ " + totDeductions
+Display
+Display "Net Pay: $ " +netPay
+Display
+
+// End the program 
+Display "End of program. Good-bye!"
+
+Stop

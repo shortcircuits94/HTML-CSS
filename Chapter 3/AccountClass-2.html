@@ -1,0 +1,93 @@
+<html>
+<head> 
+<script type="text/javascript">
+
+// Program Name: Account Class 
+// Purpose: Use a construtor function to create an object
+// Author: Rebecca Scott 
+// Date last modified: 2016-12-06
+
+// Constructor function with fire parameters
+function Account(type, num, lName, fName, bal) {
+   this.acctType = type;
+   this.acctNumber = num; 
+   this.lastName = lName; 
+   this.firstName = fName;
+   this.acctBal = bal;
+	
+	// Link the current object to the class methods
+   this.deposit = deposit; 
+   this.withdraw = withdraw;
+   this.changeName = changeName; 
+   this.inquire = inquire; 
+   this.displayInfo = displayInfo;
+}
+
+// function to deposit an amount in the account 
+function deposit(amt) {
+   this.acctBal = this.acctBal + amt;
+   document.write("New balance: $" + this.acctBal + BR);
+}
+
+// function to withdraw an amount in the account 
+function withdraw(amt) {
+   this.acctBal = this.acctBal - amt;
+   document.write("New balance: $" + this.acctBal + BR);
+}
+
+// function to change the first and last name 
+function changeName(lName, fName) {
+   this.lastName = lName; 
+   this.firstName = fName; 
+   document.write("The name has been changed to " + this.firstName + " " +this.lastName + BR);
+}
+
+// function to inquire about the account balance 
+function inquire() {}
+   document.write("Balance: $" + this.acctBal + BR);
+} 
+
+// function to display all information about the account 
+function displayInfo(amt) {
+   document.write("Account type: " + this.acctType + BR);
+   document.write("Account #: " + this.acctNumber + BR);
+   document.write("Last name: " + this.lastName + BR);
+   document.write("First name: " + this.firstName + BR);
+   document.write("Balance: $" + this.acctBal + BR);
+}
+
+</script>
+</head>	
+
+<body>
+<script type="text/javascript">
+
+// variables and constants 
+var BR = "<br />"; // HTML line break 
+
+// State program purpose 
+document.write("Account Program." + BR);
+document.write("This Program creates an account." + BR); 
+document.write("It also modifies the account." + BR);
+
+// Create an account object 
+var mySavingsAcct = new Account("S", 1376433, "Dunes", "Sandi", 80.00);
+	
+// Deposit $100 
+mySavingsAcct.deposit(100.00);
+
+// Withdraw $50
+mySavingsAcct.withdraw(50.00);
+	
+// Inquire about balance
+mySavingsAcct.inquire();
+	
+// Display the information to verify
+mySavingsAcct.displayInfo();
+
+// Thank the user and end the program 
+document.write("Thank you!" + BR); 
+
+</script>
+</body>
+</html>

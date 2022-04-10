@@ -1,0 +1,34 @@
+// Program name: Sales Increase
+// Purpose: Show the increase in sales for 2011 compared with 2010 in percentage 
+// Author: Rebecca Scott
+// Date last modified: 2016-09-27
+
+Start 
+
+// Declare Variables and Constants 
+Declare Numeric 2011 // 2011 sales numbers
+Declare Numeric 2010 // 2010 sales numbers 
+Declare Numeric salesDif // difference between sales numbers 
+Declare Numeric salesDiv // divided answer for the difference by 2010 
+Declare Numeric salesPer // sales percentage 
+Declare Constant PER_CENT = 100 // Multiply buy 100 for percentage
+
+// Program Heading 
+Display "Welcome to the Sales Increase Calculator!"
+
+// Get values for yearly sales numbers
+Display "Enter 2011 sales numbers: "
+Input 2011 
+Display "Enter 2010 sales numbers: "
+Input 2010 
+
+// Compute the difference and calculate the percentage and display results
+salesDif = 2011 - 2010 
+salesDiv = salesDif / 2010 
+salesPer = salesDiv * PER_CENT
+Display "The Percentage of Sales increase is" + salesPer
+
+// Thank the user and end the program 
+Display "Thank you!"
+
+Stop

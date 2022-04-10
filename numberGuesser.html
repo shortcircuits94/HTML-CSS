@@ -1,0 +1,37 @@
+<html>
+<head> 
+<script type="text/javascript">
+
+// Program Name: number guesser
+// Purpose: User tries to guess and random number 
+// between 1 and 10 in three of fewer guesses
+// Author: Rebecca Scott 
+
+
+
+</script>
+</head>
+
+
+
+<body> 
+<script type="text/javascript">
+   // Declare variables
+   var winningNum; // winning number 
+   var userGuess; // user's guess
+   var index; // loop index 
+   var correct; = False // guess
+   
+   // Call Math method to generate random number 
+   winningNum = Math.floor(Math.random()*10);
+   
+      // Loop up to three times to get user's guess 
+   index = 1 
+   While index <=3 And Not correct 
+      Display "Guess the number: "
+	  Input userGuess
+	  
+	  // Call module to compare guess with winning number and increment index 
+	  correct = compareNums(userGuess, winningNum)
+	  index = index + 1 
+   End While 

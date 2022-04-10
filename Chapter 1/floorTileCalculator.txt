@@ -1,0 +1,35 @@
+// Program Name: Floor Tile Calculator 
+// Purpose: calculate and display rooms area in square feet and the cost of tile needed to cover the room
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+Start 
+
+// Variables and Constants
+Declare Numeric totArea // total area
+Declare Numeric totCost // total cost of area
+Declare Numeric length // length of the room
+Declare Numeric width // width of the room
+Declare Numeric cost // cost per square foot
+
+
+//Program Heading
+Display "Zach Stern's Floor Tile Cost Calculator"
+
+// Get room's length and width and cost per square foot
+Display "Enter the room's length"
+Input length
+Display "Enter the room's width"
+Input width
+Display "Enter the cost per square foot"
+Input cost
+
+// Calculate the room's area and the cost of tile needed
+totArea = length * width
+totCost = totArea * cost
+Display "Area of the Floor" + totArea
+Display "Total cost of tile" + totCost
+
+// Thank the user and end the program
+Display "Thank you for using this program."
+Stop

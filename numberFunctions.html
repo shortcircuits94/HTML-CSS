@@ -1,0 +1,57 @@
+<html>
+<head>
+<script type="text/javascript">
+
+// Program name: Number Functions
+// Purpose: Create a module to send two numbers as arguments to four arithmetic functions: addition, multiplication, division, and modulus 
+// Author: Rebecca Scott
+// Date last modified: 2016-11-06 
+
+function numbers() {
+	// Declare variables 
+	var addition; // addition results 
+	var multiply; // multiplication results 
+	var division; // division results 
+	var modulus; // modulus results 
+	var BR = "<br />"; // html line break
+	
+	
+	// Compute and display results 
+	addition = num1 + num2;
+	document.write("The added number is: " + addition + BR);
+	multiply = num1 * num2;
+	document.write("The multiplied number is: " + multiply + BR);
+	division = num1 / num2;
+	document.write("The divided number is: " + division.toFixed(2) + BR);
+	modulus = num1 % num2;
+	document.write("The modulus numbers is: %" + modulus + BR);
+}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+
+// Declare variables
+var num1, num2;// user entered numbers 
+var BR = "<br />"; // html line break
+var ES = ""; // empty string for prompt 
+
+// Greet the user
+document.write("Welcome to Number Functions" + BR);
+num1 = prompt("Enter the first number:",ES);
+num1 = parseFloat(num1);
+num2 = prompt("Enter the second number:",ES);
+num2 = parseFloat(num2);
+
+// Call module
+numbers();
+
+// Thank the user and end the program 
+document.write("Thank you for using Number Functions!" + BR);
+
+</script>
+</body>
+</html>

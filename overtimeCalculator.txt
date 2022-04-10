@@ -1,0 +1,39 @@
+// Program name: Overtime Calculator
+// Purpose: Calculate gross pay with overtime
+// Author: Rebecca Scott 
+// Date last modified: 2016-09-27
+
+Start
+Declare Numeric hoursWorked // current balance
+Declare Numeric wageRate // annual interest rate
+Declare Numeric grossPay // interest amount
+Declare Numeric overtimeHours // number of overtime hours > 40 
+Declare Numeric overtimePay // pay for overtime hours 
+Declare Numeric regularPay // pay for first 40 hours
+
+// Welcome the user
+// Ask for hours worked and wage rate
+Display "Welcome to the overtime calculator!"
+Display "Enter the number of hours worked: "
+Input hoursWorked
+Display "Enter the wage rate:"
+Input wageRate
+
+//Calculate gross pay
+// Hours over 40 paid at time and a half
+If hoursWorked > 40 Then
+	overtimeHours = hoursWorked - 40 
+	overtimePay = overtimeHours * wageRate * 1.5
+	regularPay = 40 * wageRate 
+	grossPay = regularPay + overtimePay
+Else	
+	grossPay = hoursWorked * wageRate
+End If
+
+// Display the result
+Display "Gross pay: " + grossPay
+
+// Thank the user and end the program
+Display "Thank you!"
+
+Stop

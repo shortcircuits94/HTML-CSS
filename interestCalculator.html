@@ -1,0 +1,35 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: interestCalculator.html
+// Purpose: Compute annual interest
+// Author: Rebecca Scott 
+// Date last modified: 2016-09-23
+
+// Declare variables and constants
+var balance; // current balance
+var intRate; // annual interestRate
+var interest; // interest amount
+var ES = ""; // literal empty string
+var BR = "<br/>"; // HTML line break 
+
+// Welcome the user, ask for beginning balance and interest rate
+document.write("Welcome to the Interest Calculator!" + BR);
+balance = prompt("Enter the beginnning balance:",ES);
+balance = parseFloat(balance); //see variable above
+intRate = prompt("Enter the annual interest rate as a decimal (ex. 5% is .05):",ES);
+intRate = parseFloat(intRate);
+
+// Calculate the interest, add to balance, and display both
+interest = balance * intRate;
+balance = balance + interest;
+document.write("Interest for the year is: %" + interest + BR);
+document.write("Your new balance is: $" + balance.toFixed(2) + BR);
+
+// Thank the user and end the program
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

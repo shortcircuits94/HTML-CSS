@@ -1,0 +1,88 @@
+<html>
+<head>
+<script type="text/javascript">
+
+// Program name: Movie Order Class
+// Purpose: Create an order from MovieOrder class
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+
+// Variables
+var movieName;    // title of movie
+var moviePrice;  // price of movie
+var BR = "<br />" // html line break 
+var ES = ""; // empty string
+
+// Constructor method for movie order
+function MovieOrder(name, delivery) {
+   this.movieName = name;
+   if (delivery == "S") {
+      this.moviePrice = 3.99;
+   }
+   else {
+      this.moviePrice = 4.99;
+   }
+   this.displayInfo = displayInfo;
+}
+
+// Method to display information about order
+function displayInfo() {
+   document.write("Movie name: " + this.movieName + BR);
+   document.write("Price: $" + this.moviePrice + PA);
+}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+// Variables
+var choice;       // # of movie selection
+var movie;             // name of movie
+var deliveryType;  // delivery type (S or D)
+var BR = "<br />";  // HTML line break
+var PA = "<p />";   // HTML paragraph break
+var ES = "";            // empty string
+var NL = "\n";         // newline character
+
+// Welcome the user
+document.write("Welcome to MovieStream!" + PA);
+
+// Get movie choice from user
+choice = prompt("Enter 1 to order STAR WARS," + NL
+   +   "         2 for E.T., or" + NL
+   +   "         3 for RAIDERS OF THE LOST ARK",ES);
+choice = parseInt(choice);
+
+// Determine title
+if (choice == 1) {
+    movie = "Star Wars";
+}
+else if (choice == 2) {
+    movie = "E.T.";
+}
+else if (choice == 3) {
+    movie = "Raiders of the Lost Ark";
+}
+else {
+    movie = ""
+    document.write("Invalid choice." + BR);
+}
+
+// Get delivery type from user
+deliveryType = prompt("Enter S to stream movie or D to download: ",ES);
+
+
+// Call constructor method to create order
+// Call method to display movie name and price
+var myOrder = new MovieOrder(movie, deliveryType);
+myOrder.displayInfo();
+
+// Thank the user
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

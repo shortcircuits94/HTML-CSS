@@ -1,0 +1,40 @@
+
+<html>
+<head> 
+<script type="text/javascript">
+
+// Program Name: Account Class 
+// Purpose: Use a construtor function to create an object
+// Author: Rebecca Scott 
+// Date last modified: 2016-12-06
+
+// Constructor function with fire parameters
+function Account(type, num, lName, fName, bal) {
+	this.acctType = type;
+	this.acctNumber = num; 
+	this.lastName = lName; 
+	this.firstName = fName;
+	this.acctBal = bal;
+}
+</script>
+</head>	
+
+<body>
+<script type="text/javascript">
+
+// variables and constants 
+var BR = "<br />"; // HTML line break 
+
+// State program purpose 
+document.write("Account Program." + BR);
+document.write("This Program creates an account." + BR); 
+
+// Create an account object 
+var mySavingsAcct = new Account("S", 1376433, "Dunes", "Sandi", 80.00);
+
+// Thank the user and end the program 
+document.write("Thank you!" + BR); 
+
+</script>
+</body>
+</html>

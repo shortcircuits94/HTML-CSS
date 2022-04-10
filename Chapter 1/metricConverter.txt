@@ -1,0 +1,36 @@
+// Program Name: Metric Converter
+// Purpose: convert miles to kilometers 
+// Author: Rebecca Scott
+// Last Date Modified: 11-Sept-2016
+
+Start
+
+// Variables and constants
+Declare numeric mileCon // Miles converted to kilometers
+Declare Numeric kmCon // Kilometers converted to miles
+Declare Numeric miles // miles entered
+Declare Numeric km // kilometer entered
+Declare Constant MILE_CON = 1.609 // multiply miles by 1.609
+Declare Constant KM_CON = 0.6214 // multiply kilometers by 0.6214
+
+// Program Heading
+Display "Kilometers and Miles Converter"
+
+// Get miles
+Display "Enter amount of miles"
+Input miles
+
+// Calculate the conversion
+mileCon = miles * MILE_CON
+Display "Miles converted to kilometers" + mileCon
+
+// Get kilometers
+Display "Enter amount of kilometers"
+Input km
+
+// Calculate the conversion
+kmCon = km * KM_CON
+Display "Kilometers converted to miles" + kmCon
+
+Display "Thank you for using this program!"
+Stop

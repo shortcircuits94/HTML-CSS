@@ -1,0 +1,61 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+// Program name: Logical Operators
+// Purpose: Use the logical operators And, Or, Not
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+
+// Declare variables
+var num1, num2;  // numbers to enter
+var BR = "<br />"; // HTML line break 
+var ES = ""; // empty string
+
+// Welcome the user, prompt for two numbers
+document.write("Welcome to Logical Operators!" + BR);
+num1 = prompt("Enter the first number:",ES);
+num1 = parseInt(num1);
+num2 = prompt("Enter the second number:",ES);
+num2 = parseInt(num2);
+
+// See whether both numbers are greater
+// than 100, using And
+document.write("AND: ");
+if (num1 > 100 && num2 > 100) {
+   document.write("Both numbers are greater than 100." + BR);
+}
+else {
+   document.write("At least one number is less than or equal to 100." + BR);
+}
+
+// See whether either number
+// is greater than 100, using Or
+document.write("OR: ");
+if (num1 > 100 || num2 > 100) {
+   document.write("At least one number is greater than 100." + BR);
+}
+else {
+   document.write("Neither number is greater than 100." + BR);
+}
+
+// See whether either number
+// is greater than 100, using Not
+// The combined condition is negated,
+// and the order of messages is switched
+document.write("NOT: ");
+if (!(num1 > 100 || num2 > 100)) {
+    document.write("Neither number is greater than 100." + BR);
+}
+else {
+    document.write("At least one number is greater than 100." + BR);
+}
+
+// Thank the user and end the program
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

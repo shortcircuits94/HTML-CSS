@@ -1,0 +1,53 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Character Box Filled 
+// Purpose: 
+// Author: Rebecca Scott 
+// Date last modified: 2016-11-27
+
+// Write a program that prompts the user for a keyboard character and the number of rows and columns 
+// and then displays a solid rectangle consisting of rows and columns of the specified character
+
+// Declare varibles and constants 
+var numRows; // number of rows 
+var numCol; // number of columns
+var keyChar; // key character 
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string
+var row = 0; // default
+var column = 0; // default
+
+
+// prompt user for keyboard character, number of rows, number of columns
+keyChar = prompt("Enter the character for the rectangle: ",ES);
+numCol = prompt("Enter the number of columns: ",ES);
+numRows = prompt("Enter the number of rows: ",ES);
+
+
+//for (column = 0; column < numCol; column++) {
+//	document.write(" " + keyChar);
+//	}
+//	for (row = 0; row < numRows; row++) {
+//	document.write(" " + keyChar + BR);
+//	}
+
+
+// -2 here is a possible solution: nesting
+
+for (row = 1; row <= numRows; row++) {
+   for (column = 1; column <= numCol; column++) {
+      document.write(keyChar);
+   }
+   document.write(BR);
+}
+
+
+	
+
+
+
+</script>
+</body>
+</html>

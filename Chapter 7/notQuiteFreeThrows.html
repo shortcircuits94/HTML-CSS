@@ -1,0 +1,56 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: Not Quite Free Throws
+// Purpose: Calculate orders for a sale
+// on flying discs and boomerangs
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+// Declare variables
+var totPurchase;    // total purchase
+var shippingCost;  // shipping cost
+var totOrder;        // total order
+var numDiscs;       // # flying discs
+var numBooms;   // # boomerangs
+var BR = "<br />"; // html line break 
+var ES = ""; // empty string 
+
+// Declare constants for prices and rates
+var DISC_PRICE = 4.98;    // disc price
+var BOOM_PRICE = 3.98; // boomerang price
+var REG_SHIP = 5.00;        // shipping rate
+
+   // Display program header,
+   // get number of discs and boomerangs
+document.write("Not Quite Free Throws Sale" + BR);
+document.write("We are ready to take your order!" + BR);
+numDiscs = prompt("How many flying discs do you want? ",ES);
+numDiscs = parseInt(numDiscs);
+numBooms = prompt("How many boomerangs do you want? ",ES);
+numBooms = parseInt(numBooms);
+
+// Calculate total purchase amount
+totPurchase = (numDiscs * DISC_PRICE) + (numBooms * BOOM_PRICE);
+
+// Determine whether customer gets free shipping
+if ((numDiscs >=1 && numBooms >=1) || (numDiscs >=3 || numBooms >=3)) {
+    shippingCost = 0.00;
+    document.write("Congratulations! Shipping is free!" + BR);
+}
+else {
+    shippingCost = REG_SHIP;
+}
+   
+// Calculate and display order details, total
+totOrder = totPurchase + shippingCost;
+document.write("Total Purchase Amount: " + totPurchase + BR);
+document.write("Shipping Cost: " + shippingCost + BR);
+document.write("Total Order: " + totOrder + BR);
+
+   // Thank the user and exit the program
+document.write("Thanks for shopping here!" + BR);
+</script>
+</body>
+</html>

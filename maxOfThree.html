@@ -1,0 +1,70 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: mathMethods.html
+// Purpose: Uses several Math methods
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+// Variables and constants
+var someNum1;       // 1st number entered by user
+var sqRoot;             // square root of number
+var absolute;            // absolute value of number
+var nextHighest;       // next highest whole number
+var nextLowest;       // next lowest whole number
+var someNum2;       // 2nd number entered by user
+var higherNum;        // higher of two numbers entered
+var lowerNum;        // lower of two numbers entered
+var sumNum3;        // 3rd number entered by user
+var ES = "";             // empty string for prompt
+var BR = "<br />";   // HTML line break
+var PA = "<p />";    // HTML paragraph break
+
+
+// Welcome the user and explain the program's purpose
+document.write("Welcome to the Math methods program." + BR);
+document.write("This program asks for a decimal number, ");
+document.write("and calculates the square root, " + BR);
+document.write("absolute value, and the next highest ");
+document.write("and next lowest whole number. " + BR);
+document.write("It then asks for a second number, and third numer ");
+document.write("and calculates the higher and the lower ");
+document.write("of the three numbers." + PA);
+
+// Prompt user for the first number, convert to numeric
+someNum1= prompt("Enter a number:",ES);
+someNum1 = parseFloat(someNum1);
+
+// Compute and display square root, absolute value,
+//   and next highest and next lowest whole numbers
+sqRoot = Math.sqrt(someNum1);
+absolute = Math.abs(someNum1);
+nextHighest = Math.ceil(someNum1);
+nextLowest = Math.floor(someNum1);
+document.write("Square root: " + sqRoot.toFixed(2) + BR);
+document.write("Absolute value: " + absolute + BR);
+document.write("Next highest whole number: " + nextHighest + BR);
+document.write("Next lowest whole number: " + nextLowest + PA);
+
+// Prompt user for the second number, convert to numeric
+someNum2= prompt("Enter another number:",ES);
+someNum2 = parseFloat(someNum2);
+
+// Prompt user for the third number, convert to numeric
+someNum3= prompt("Enter another number:",ES);
+someNum3 = parseFloat(someNum3);
+
+// Compute and display the higher and lower numbers
+higherNum = Math.max(someNum1, someNum2, someNum3);
+lowerNum = Math.min(someNum1, someNum2, someNun3);
+document.write("Higher of the three: " + higherNum + BR);
+document.write("Lower of the three: " + lowerNum + PA);
+
+// Thank the user and end the program
+document.write("Thank you for using this program!" + BR);
+
+</script>
+</body>
+</html>
+

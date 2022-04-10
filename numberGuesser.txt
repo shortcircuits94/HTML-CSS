@@ -1,0 +1,55 @@
+// Program Name: number guesser
+// Purpose: User tries to guess and random number 
+// between 1 and 10 in three of fewer guesses
+// Author: Rebecca Scott 
+
+Start 
+
+   // Declare variables
+   Declare Numeric winningNum // winning number 
+   Declare Numeric userGuess // user's guess
+   Declare Numeric index // loop index 
+   Declare Boolean correct = False // guess
+   
+   // Call Math method to generate random number 
+   winningNum = Random(1,10)
+   
+   // Loop up to three times to get user's guess 
+   index = 1 
+   While index <=3 And Not correct 
+      Display "Guess the number: "
+	  Input userGuess
+	  
+	  // Call module to compare guess with winning number and increment index 
+	  correct = compareNums(userGuess, winningNum)
+	  index = index + 1 
+   End While 
+   
+   // Report winner based on correct variable, thank user and end program 
+   Display "The winning number was " + winningNum
+   Call reportWinner(correct)
+   Display "Thank you!"
+Stop
+
+Function Boolean compareNums (Numeric guess, Numeric win)
+   Declare Boolean result
+   If guess == win Tehn 
+      result = True 
+   Else
+      result = False 
+	  If guess < win Then 
+	     Display "Your guess was low."
+		 Else
+		 Display "Your guess was high"
+		 End If 
+	End If 
+	Return result 
+End Function 
+
+Module reportWinner(Boolean itIsUser)
+   If itIsUser Then
+      Display "Congratulations! You Won!" 
+   Else 
+      Display "Sorry. Better luck next time."
+   End If 
+End Module 

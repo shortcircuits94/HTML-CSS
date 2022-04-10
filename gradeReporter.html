@@ -1,0 +1,54 @@
+<html>
+<body> 
+<script type="text/javascript"> 
+
+
+// Declare variables 
+var gradePer; // grade percentage 
+var absences; // number of absences
+var finalGrade; // final grade 
+var PER_CENT = 1.03 // percentage of grade bump
+var BR = "<br />"; // HTML line break
+var ES ""; // empty string
+
+// Greet user and prompt for info 
+document.write("Welcome to the Grade Reporter calculator!" + BR);
+gradePer = prompt("Enter your grade percentage.",ES);
+gradePer = parseFloat(gradePer);
+absences = prompt ("Enter the number of absences.",ES);
+absences = parseInt(absences);
+
+   // Calculate the total 
+   finalGrade = (gradePer * PER_CENT);
+
+   // Detemine whether they get an additional 3%
+   if (>=5 absences) {
+	   document.write("Unfortunately you have too many absences and receive and F" + BR);
+	  }
+       if (finalGrade <= 100 || finalGrade >= 90 && absences <=2) {
+	     document.write("Congratulations you qualify for 3% grade increase and have received an A: " + finalGrade + BR);
+      }
+      else if (finalGrade <= 89.9 || finalGrade >= 80 && absences <=2) { 
+         document.write("Congratulations you qualify for 3% grade increase and have received an B: " + finalGrade + BR);
+      }
+      else if (finalGrade <= 79.9 || finalGrade >= 70 && absences <=2) {
+	     document.write("Congratulations you qualify for 3% grade increase and have received an C: " + finalGrade + BR);
+	  }
+	  else if (finalGrade <= 69.9 || finalGrade >= 60 && absences <=2) {
+	  document.write("Congratulations you qualify for 3% grade increase and have received an D: " + finalGrade + BR);
+	  }
+	  else if (finalGrade <= 59.9 || finalGrade >= 50 && absences <=2) {
+	  document.write("Unfortunately you have received an F: " + finalGrade + BR);
+	  }
+   else {
+	   document.write("Your grade remains the same." + BR);
+	   }
+   }
+
+
+// Thank the user and end the program 
+document.write("Thank you for using Grade Reporter!")
+
+</script>
+</body>
+</html>

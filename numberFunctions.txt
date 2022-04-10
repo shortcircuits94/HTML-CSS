@@ -1,0 +1,53 @@
+// Program name: Number Functions
+// Purpose: Create a module to send two numbers as arguments to four arithmetic functions: addition, multiplication, division, and modulus 
+// Author: Rebecca Scott
+// Date last modified: 2016-11-06 
+
+
+Create a module to send two numbers as arguments to four arithmetic functions: addition, multiplication, division, and modulus (is a %)
+the remainder after dividing one number by the other
+The functions should return the values to the calling module, where they're displayed 
+
+Start
+
+
+
+// Declare variables
+num1, num2 // user numbers 
+
+// Greet the user
+Display "Welcome to Number Functions"
+Display "Enter the first number:"
+Input num1
+Display "Enter the second number:"
+Input num2
+
+// Call module
+Call numberFunction
+
+// Thank the user and end the program 
+Display "Thank you for using Number Functions!"
+
+Stop 
+
+Module numberFunctions
+	// Declare variables 
+	Declare Numeric addition // addition results 
+	Declare Numeric multiply// multiplication results 
+	Declare Numeric division // division results 
+	Declare Numeric modulus // modulus results 
+	
+	
+	// Compute and display results 
+	addition = num1 + num2 
+	Display "The added numbers are:" + addition
+	multiply = num1 * num2 
+	Display "The multiplied numbers are: " + multiply
+	division = num1 / num2 
+	Display "The divided numbers are: " + division 
+	modulus = num1 % num2 
+	Display "The modulus numbers are: " + modulus 
+End Module 
+
+
+// 
