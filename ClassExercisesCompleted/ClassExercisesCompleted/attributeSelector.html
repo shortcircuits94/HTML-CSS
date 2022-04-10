@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Attribute Selector Examples</title>
+	<style type="text/css">
+	/*Attibute selection*/
+
+	img[title] {border: 2px solid blue;}
+
+	img[title="red flower"]{border:4px solid green;}
+
+	/*containing the word*/
+	[title~="flowers"]{border:4px solid red;}
+
+	/*starts with*/
+	[title^="red"]{border:4px solid red;}
+
+	/*ends with*/
+	[title$="flowers"]{border:4px solid red;}
+
+	/*contains the substring*/
+	[title*="flow"]{border:4px solid red;}
+
+	a[href="something"]{border:2px solid blue;}
+	</style>
+</head>
+<body>
+	<section>
+	<img src="image1.jpg" title="red flower" alt="Image of a red flower" /><br/>
+	<img src="image2.jpg" title="yellow flowers" alt="Image of a yellow flower" />
+	<a href="something" >dog</a>
+	</section>
+</body>
+
+</html>

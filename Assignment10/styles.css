@@ -1,0 +1,143 @@
+/*****************
+***************
+WebSite: Assignment 10
+By: Rebecca Scott
+
+****************
+Colour Guide:
+Text: #732759 Peasly
+Body: #EDAFAA Art Class Model 
+Nav: #732759 Peasly
+#E39295 Belle Peach 
+#DA7487 Darius II 
+#A6487A Anitra
+****************
+Font Guide:
+PT Sans Narrow
+
+****************
+References:
+http://www.nationalgeographic.com/animals/mammals/d/domestic-cat/
+
+
+Image References: 
+https://www.flickr.com/photos/wapiko57/6509860769/in/photolist-qCNRVR-65ZwUn-9eRJXA-2EkK6A-8LE1cV-pvpxDd-fJ6ud6-quxHJ5-aVfJNM-2EhjjR-9yMddK-dZ8JwZ-4wxjEi-aVEJ3F-82QaA6-a1XhAr-6ceY2V-fXRSo-oX8Dp7-gNDssL-4X6zaE-a1XhYr-aVfZHx-aC1mH7-aruwkH-aT7akM-9FjWdg-aqXAKH-ar1fEN-q83znw-9Bhox1-6zsGDL-Rw6yd-e4LY68-ajyBYj-4DHJ6f-65fjVh-qTG9ni-8GeWbL-d55j3Y-mGEMFC-aqXBdH-ahuXf8-fPoM4G-8e6Nuz-gepJf2-97uBZ7-SsbzUb-5rjoU-aqXARD/
+https://www.flickr.com/photos/130799750@N03/16169099399/in/photolist-qCNRVR-65ZwUn-9eRJXA-2EkK6A-8LE1cV-pvpxDd-fJ6ud6-quxHJ5-aVfJNM-2EhjjR-9yMddK-dZ8JwZ-4wxjEi-aVEJ3F-82QaA6-a1XhAr-6ceY2V-fXRSo-oX8Dp7-gNDssL-4X6zaE-a1XhYr-aVfZHx-aC1mH7-aruwkH-aT7akM-9FjWdg-aqXAKH-ar1fEN-q83znw-9Bhox1-6zsGDL-Rw6yd-e4LY68-ajyBYj-4DHJ6f-65fjVh-qTG9ni-8GeWbL-d55j3Y-mGEMFC-aqXBdH-ahuXf8-fPoM4G-8e6Nuz-gepJf2-97uBZ7-SsbzUb-5rjoU-aqXARD
+
+******************
+0. CSS Reset
+1. Header
+2. Body
+3. Content
+4. Images
+5. Nav
+******************
+*/
+
+
+
+* {margin: 0; padding: 0;}
+h1 {
+	text-align: center;
+	border: 2px solid #DA7487;
+	background-color: #DA7487;
+	border-collapse: collapse;
+	border-width: 5px;
+    border-radius: 5px;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding: 5px;
+	background-color: #EDAFAA;
+	color: #732759;
+	font-size: 20px;
+}
+p {
+	padding: 10px;
+}
+
+
+
+.content {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+.col1 {
+	float: left;
+	width: 25%;
+	padding: 10px;
+
+}
+.col2 {
+	float: left;
+	width: 43%;
+	padding: 8px;
+
+}
+.col3 {
+	float: left; 
+	width: 25%; 
+	padding: 10px;
+
+}
+
+img[title="cat1"] { 
+	max-width: 100%;
+	border: 2px solid #DA7487;
+	background-color: #DA7487;
+	border-collapse: collapse;
+	border-width: 2px;
+    border-radius: 3px; 
+	padding: 5px;
+
+}
+
+img[title="cat2"] {
+	max-width: 70%;
+	border: 2px solid #DA7487;
+	background-color: #DA7487;
+	border-collapse: collapse;
+	border-width: 2px;
+    border-radius: 3px; 
+	padding: 5px;
+}
+
+ul {
+	list-style-type: none;
+	border: 2px solid #DA7487;
+	background-color: #DA7487;
+	border-collapse: collapse;
+	border-width: 5px;
+    border-radius: 5px; 
+}
+
+a:link {
+	text-decoration:none;
+	color: #A6487A;
+}
+a:visited {
+	color: #732759;
+}
+a:hover {
+	text-decoration:none;
+	color: lightgrey;
+}
+a:active{
+	color: #732759;
+}
+
+@media screen and (max-width:568px) {
+.content { 
+	width:96%; 
+	margin:0 auto;
+}
+.col1,.col2,.col3 {
+	float: none; 
+	width: 100%;
+}
+}

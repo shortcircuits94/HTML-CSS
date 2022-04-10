@@ -1,0 +1,338 @@
+/*
+*********************
+Website: Web Resume
+By: Rebecca Scott
+*********************
+Font Guide:
+Headers: Dancing Script
+Text: Playfair Display
+*********************
+Colour Guide: 
+Background Colour: rgba(235,245,244,0) White
+Wrapper Colour: #bcbcbc Grey
+Text Colour: #5F084B Purple
+*********************
+H1 Background: 
+Lea Verou
+http://lea.verou.me/css3patterns/#shippo
+*********************
+Social Media Icons:
+W3Schools
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+*********************
+Image Reference:
+Web1 - Cat Website
+Web2 - Firfly Website 
+Web3 - Camp Website 
+Web4 - Sherlock Holmes Website
+Web5 - The Valley of Fear Website
+Web6 - Coffee in Canada Website
+Web7 - Favourite Tv Shows Website
+Web8 - Despicable Me Website
+Web9 - The Hound of Baskervilles Website
+
+*********************
+0. Reset
+1. Headers
+2. Header Navigation
+3. Body
+4. Wrapper & Columns
+5. Paragraphs
+6. Aside & Social Media Links
+7. Footer
+8. Portfolio Page
+9. Skills Page
+10. Experience Page
+11. Contact Page
+12. @Media 
+*********************
+*/
+
+/* Main Content */
+* {margin: 0; padding: 0;}
+h1 {
+	text-align: center; 
+	font-family: 'Dancing Script', cursive;
+	font-size: 600%;
+	padding: 40px;
+	max-width: 960px;
+	min-width: 250px;
+	color: black;
+	background-color:#def;
+	background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+	radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+	background-size:80px 80px;
+	background-position:0 0, 40px 40px; 
+	background-color: #D9DBE4;
+	border-radius: 5px;
+	border: 10px;	
+}
+
+h3 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 200%;
+	padding: 40px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 65px;
+    text-decoration: none;
+	color: #5F084B;
+}
+nav li a:hover {
+    opacity: 0.7;
+}
+
+body {
+	background-color: rgba(235,245,244,0); 
+	font-family: 'Playfair Display', serif;
+	line-height: 1.5em;
+	color: #5F084B;
+	max-width:100%;
+	min-width:240px;
+	max-height:500px;
+	min-height:21%;
+}
+
+#wrapper {
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	display: block;
+	background-color: #bcbcbc;
+	border-left: 1px solid black;
+	border-right: 1px solid black;	
+}
+#col1 {
+	float: left;
+	width: 600px;
+	padding: 20px;
+	box-sizing:border-box;
+}
+
+#col2 {
+	width: 300px;
+	float: right;
+	box-sizing:border-box;
+	padding: 20px;
+}
+
+p {
+	max-width:600px;
+	line-height: 200%;
+	font-weight: bold;
+	text-indent: 50px;
+}
+
+p a:visited {
+    color: #5F084B;
+}
+
+p a:hover {
+	color: lightgrey;
+}
+
+p a:active {
+	color: lightgrey;
+}
+
+aside {
+	padding: 20px;
+	line-height: 1.5em;
+	width: 70%;
+	background-color: #b2b7ba;
+	border-radius: 5px;
+	border: 10px solid #68656D;
+	clear: both;
+	
+	
+}
+
+
+
+img[title="me"] {
+	padding: 5px;
+    width: 70%;
+    border-radius: 90%;
+	filter: contrast(110%);
+}
+
+
+/*Social Media Icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+	
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Tumblr */
+.fa-tumblr {
+    background: #35465c;
+    color: white;
+	
+}
+/* Linkedin */
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+/* Pinterest */
+.fa-pinterest {
+	background: #c92228;
+    color: white;
+}
+
+
+
+footer {
+	clear:both;
+	text-align: center; 
+	
+	border-spacing: 10px;
+	border-top: 1px solid black;
+}
+
+/* Portfolio Page */
+figure {
+	padding: 20px;
+}
+figure:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+	transition-property: background-color;
+	transition-duration: 1s;
+}
+figcaption {
+	display: none; 
+	position: absolute;
+	width: 200px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #5F084B;
+    color: #fff;
+	border-radius: 6px;
+	z-index: 1;
+	top: 0;
+    left: 85%; 
+	transition-property: background-color;
+	transition-duration: 1s;
+	
+}
+figure:hover figcaption {
+	display: block;	
+}
+figcaption p {
+	font-size: 16px;
+	text-indent: 1px;
+	color: #bcbcbc;
+	margin-bottom: 6px;
+}
+/*Skills Page*/
+#skills {
+	list-style-position: inside;
+	font-weight: bold;
+	text-indent: 50px;
+}
+/*Experience Page */
+#experience {
+	list-style-position: inside;
+	text-indent: 50px;
+}
+
+
+
+/*Contact Me */
+form {
+	padding: 20px;
+	line-height: 20px;
+	font-size: 18px;
+	border: 10px solid #68656D;
+	
+}
+input[type=text], [type=email], [type=tel] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+ 
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+	
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #5F084B;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+
+/* Media */
+@media screen and (max-width:568px) {
+#wrapper	{ 
+	width:96%; 
+	margin:0 auto;
+}
+#col1,#col2{
+	float: none; 
+	width: 100%;
+}
+h1 {
+	font-size: 300%;
+}
+figure, figcaption{
+	width: 200px;
+	display: block;
+	float: none;
+}
+
+figure:hover,  figure:hover figcaption, figcaption p {
+	width: 200px;
+	float: none;
+
+}

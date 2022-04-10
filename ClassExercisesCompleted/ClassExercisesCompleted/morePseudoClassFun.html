@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Pseudo Classes</title>
+	<style type="text/css">
+	/*more pseudo classes*/
+
+	#more_info:target {background:#eee;}
+
+	input:focus {border:1px solid blue;}
+
+	input:checked +label {font-size:200%;}
+
+	#next:target{background-color:yellow;}
+	</style>
+</head>
+<body>
+<section>
+	<h2>An H2 Heading</h2>
+	<p>This is a paragraph</p>
+	<p>Paragraph 2 has a <a href="#next">a link</a> in it</p>
+	<a href="#">Link </a>
+	<p id="next">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper sodales adipiscing. Nullam tempor arcu nulla. Aliquam risus nisi, tempus id fermentum sed, ullamcorper quis nunc. Suspendisse rhoncus tincidunt orci, sed viverra ante cursus in. Sed feugiat leo id tortor fermentum placerat. Nullam in vehicula neque. Duis congue justo a ipsum pharetra semper id sed justo. Ut arcu turpis, egestas nec facilisis interdum, consectetur ac lacus. Quisque tincidunt, mauris et tincidunt gravida, purus diam luctus magna, ac posuere ipsum augue eget turpis. In gravida, magna vitae blandit auctor, diam elit commodo tellus, eu accumsan odio justo sed velit. Vestibulum vehicula metus at massa dignissim id accumsan ante varius. Pellentesque at metus augue, non sodales tortor.</p>
+	<p id="more_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper sodales adipiscing. Nullam tempor arcu nulla. Aliquam risus nisi, tempus id fermentum sed, ullamcorper quis nunc. Suspendisse rhoncus tincidunt orci, sed viverra ante cursus in. Sed feugiat leo id tortor fermentum placerat. Nullam in vehicula neque. Duis congue justo a ipsum pharetra semper id sed justo. Ut arcu turpis, egestas nec facilisis interdum, consectetur ac lacus. Quisque tincidunt, mauris et tincidunt gravida, purus diam luctus magna, ac posuere ipsum augue eget turpis. In gravida, magna vitae blandit auctor, diam elit commodo tellus, eu accumsan odio justo sed velit. Vestibulum vehicula metus at massa dignissim id accumsan ante varius. Pellentesque at metus augue, non sodales tortor.</p>
+
+	<form action="#" method="get">
+		First name: <input type="text" value="Mickey" /><br/>
+		Last name: <input type="text" value="Mouse" /><br/>
+		Country: <input type="text" disabled="disabled" value="Disneyland" /><br/>
+		Password: <input type="password" name="password" />
+		<input type="radio" value="male" name="gender" id="male" /> <label for="male">Male</label><br/>
+		<input type="radio" value="female" name="gender" id="female" /><label for="female">Female</label><br/>
+		<input type="checkbox" value="Bike" id="bike" /> <label for="bike">I have a bike</label><br/>
+		<input type="checkbox" value="Car" id="car" /><label for="car"> I have a car</label><br />
+	</form>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Camp Program</title>
+	<link href="as8.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<head>
+<body>
+	<div id="wrapper">
+		<img src="camp-logo-green.png" alt="camp" title="camp"/>
+		<h2>Summer Camp Registration</h2>
+			<form action="formsubmit.html" method="post">
+		<fieldset>
+		<section>
+		<section>
+			<label>First Name</label>
+			<input type="text" id="fname" name="fname" />
+		</section>
+		<section>
+			<label>Last Name</label>
+			<input type="text" id="lname" name="lname" /> 
+		</section>
+		<section>
+			<label>Date of Birth</label>
+			<input type="text" id="bday" name="bday" />
+		</section>
+		<section>
+			<label>Address</label>
+			<input type="text" id="address" name="address" />
+		</section>
+		<section>
+			<label>City</label>
+			<input type="text" id="city" name="city" /> 
+		</section>
+		<section>
+			<label>Postal Code</label>
+			<input type="text" id="postal" name="postal" /> 
+		</section>
+		<section>
+			<label>Home Phone Number</label>
+			<input type="tel" id="homephone" name="homephone" placeholder="(000)-000-0000" pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" /> 
+		</section>
+		<section>
+			<label>Email Address</label>
+			<input type="text" id="email" name="email" />
+		</section>
+		<section>
+			<label>Parent(s) Name</label>
+			<input type="text" id="parentname" name="parentname" /> 
+		</section>
+		<section>
+			<label>Parent(s) Work Number</label>
+			<input type="tel" id="parentwork" name="parentwork"  placeholder="(000)-000-0000" pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" />
+		</section>
+		<section>
+			<label>Parent(s) Cell Number</label>
+			<input type="tel" id="parentcell" name="parentcell" placeholder="(000)-000-0000" pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" /> 
+		</section>
+		<section>
+			<label>Emergency contact other than parents(name)</label>
+			<input type="text" id="emergname" name="emergname" /> 
+		</section>
+		<section>
+			<label>Relationship to participant</label>
+			<input type="text" id="rel" name="rel" />
+		</section>
+		<section>
+			<label>Cell Number</label>
+			<input type="tel" id="" name="" placeholder="(000)-000-0000" pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" />
+		</section>
+		</section>
+		</fieldset>
+		<fieldset>
+		<section>
+		<section>
+			<label for="fday">Full Day Program</label>
+			<input type="radio" id="fday" name="program" value="fullDay"/>
+
+			<label>Half Day Program</label>
+			<input type="radio" id="hday" name="program" value="halfDay"/>
+		</section>
+		<section>
+			<label for "select_choice">What program are they enrolling in?</label>
+			<select id="select_choice" name="select_choice">
+			<option value="1">Art Program</option>
+			<option value="2">Music Program</option>
+			<option value="3">Dance Program</option>
+			<option value="4">Outdoor Program</option>
+			<option value="5">Bike Safety</option>
+			<option value="6">Sports Program</option>
+		</select>
+		</section>
+		<section>
+			<label>Any allergies or medication</label>
+			<input type="text" id="allergies" name="allergies" /> <br />
+		</section>
+		</section>
+		</fieldset>
+		<fieldset>
+		<section>
+			<legend>Credit Card (required)</legend>
+		    <fieldset class="optionGroup">
+			
+			   <label>
+			   <input type="radio" name="ccard" id="ccard" required="required" value="diners" />
+			   <img src="diners.png"/>
+			   </label>
+			   
+			   <label>
+			   <input type="radio" name="ccard" id="ccard" required="required" value="discover" />
+			   <img src="discover.png"/>
+			   </label>
+			   
+			   <label>
+			   <input type="radio" name="ccard" id="ccard" required="required" value="master" />
+			   <img src="master.png"/>
+			   </label>
+			   
+			   <label>
+			   <input type="radio" name="ccard" id="ccard" required="required" value="visa" />
+			   <img src="visa.png"/>
+			   </label>
+			  
+			</fieldset>
+			<fieldset class="cnn">
+			 <label for="name">Cardholder Name</label>
+			<input type="text" id="name" name="name"/><br />
+			<label for="ccardnumber">Credit Card Number</label>
+			<input name="ccardnumber" id="ccardnumber" required="required" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" /><br />
+			
+			<label for="ccardmonth">Expiration Date</label>
+			<select name="ccardmonth" id="ccardmonth" required="required">
+			   <option value="mon">--Month--</option>
+	           <option value="jan">January (01)</option>
+	          <option value="feb">February (02)</option>
+	          <option value="mar">March (03)</option>
+	          <option value="apr">April (04)</option>
+	          <option value="may">May (05)</option>
+	          <option value="jun">June (06)</option>
+	          <option value="jul">July (07)</option>
+	          <option value="aug">August (08)</option>
+	          <option value="sept">September (09)</option>
+	         <option value="oct">October (10)</option>
+	         <option value="nov">November (11)</option>
+	         <option value="dec">December (12)</option>
+	      </select>
+		  
+		  <select name="ccardyear" id="ccardyear" required="required" style="margin-right:25%">
+		  <option value="yea">--Year--</option>
+	      <option value="2014">2014</option>
+	      <option value="2015">2015</option>
+	      <option value="2016">2016</option>
+	      <option value="2017">2017</option>
+	      <option value="2018">2018</option>
+	     </select>
+		<br />
+		 
+		 <label for="csc">CSC</label>
+		 <input name="csc" id="csc" style="display:inline;" required="required" placeholder="nnn"><br />
+		
+		 
+		 <br/>
+		  
+         </fieldset> 
+		 
+		 <fieldset>
+		 <div id="submit">
+		 <input type="submit" value="Submit!" name="submit" />
+		 </div>
+		 </fieldset>
+		 </section>
+		 
+	</div>
+</body>
+</html>

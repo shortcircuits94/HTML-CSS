@@ -1,0 +1,90 @@
+/**************************************************
+Website: Sherlock Holmes
+Author: Rebecca Scott
+
+***********
+Colour Guide:
+Background: Black
+Text: White
+***********
+
+***********
+Font Guide:
+Header: 'Source Sans Pro' 60px
+Body: 'Droid Serif' 16px
+***********
+
+***********
+0. CSS Reset
+1. Heading
+2. Body
+3. Footer & Nav
+***********
+
+*/
+
+* {margin: 0; padding: 0;}
+
+h1 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 20px;
+	font-size: 60px;
+}
+body {
+	font-family: 'Droid Serif', serif;
+	background-color: black;
+	color: white;
+	letter-spacing: 0.1em;
+	line-height: 30px;
+}
+#wrapper {
+	width: 960px; 
+	margin: 0 auto;
+}
+#column1 {
+	width: 200px;
+	box-sizing:border-box;
+	float:left;
+
+}
+#column2 {
+	width: 500px;
+	padding: 10px;
+	border: 1px solid white;
+	box-sizing:border-box;
+	float:left;
+
+}
+
+#column3 {
+	width: 260px; 
+	box-sizing:border-box;
+	float: left;
+	padding: 10px;
+
+}
+
+
+img[title='sherlock1'] {
+	filter: contrast(90%);
+}
+
+img[title='sherlock2'] {
+	filter: sepia(100%);
+}
+
+img[title='sherlock3'] {
+	filter: grayscale(100%);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+	clear:both;
+}
+
+nav ul {
+	list-style-type: none;
+}

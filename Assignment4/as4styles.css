@@ -1,0 +1,93 @@
+/* 
+Assignment 4
+
+Image reference: 
+http://www.coffeeassoc.com/coffee-facts/
+https://lisamulch.wordpress.com/tag/coffee-beans/
+https://www.flickr.com/photos/commons/92449013/in/photolist-9aPSv-dz1Uxo-dTyJuW-7fVeKb-bqg1DX-poDmxP-a36PuP-5GEGNZ-ojtKQ-4Szzoy-4xwtoi-4hYkJV-49dB3K-cSYzmA-4i3qzL-9myu89-pXwi5z-5uZ6s8-9a4PqA-4MmhD6-aWpnjP-7sMynd-nQjpSq-bL9vA2-55qGxf-4BN1Db-8XpvRt-9vKV3p-4fBKtV-6knkLt-ary9W6-4i3und-fMSy8L-egAaQr-4hYmxX-vMPvce-6PnYHA-m7doBt-6jQmFn-a94qfZ-gzmzvn-4DcfQJ-vMPs9k-HeFwMy-wKbLEe-ws5sVE-nSfe14-8VbCCx-wJG4Sc-vMEGtw 
+*/
+* { 
+	margin: 3px;
+	padding: 5px;
+	
+}
+
+h1, h2 {
+	text-align: center;
+	text-shadow: 2px 2px grey;
+	
+}
+
+body {
+	font-family: Lucida Console, Monospace; 
+	font-size: 1.0em;
+	background: #d39be4;
+    background: -webkit-linear-gradient(left, #d39be4, #99ccff); 
+    background: -o-linear-gradient(right, #d39be4, #99ccff);
+    background: -moz-linear-gradient(right, #d39be4, #99ccff);
+    background: linear-gradient(to right, #d39be4 , #99ccff);
+}
+
+p  cite {
+	color: hsl(57, 86%, 69%);
+}
+
+ul  id="list" {
+	display: inline-block;
+	list-style-type: disc;
+	list-style-position: inside;
+	border:4px dotted gray;
+	border-collapse: separate;
+    border-spacing: 10px 50px;
+	background-color: rgb(204, 204, 204);
+	padding: 10px;
+	margin-left: 10px;
+	float: center;
+}
+
+
+
+a:link {
+	color: blue;
+}
+a:visited {
+	color: red;
+}
+a:hover {
+	text-decoration:none;
+	color: orange;
+}
+a:active{
+	color:orange;
+}
+
+img[title="coffeeBeans"]{
+	border:4px solid white;
+	border-radius: 25px;
+	float:center;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	display: block;
+    margin: auto;
+}
+img[title="coffeeimg"]{
+	border:4px solid white;
+	border-radius: 25px;
+	width: 50%;
+	float: right;
+	display: block;
+    margin: auto;
+}
+img[title="CoffeeInfo"]{
+	border:4px solid white;
+	border-radius: 25px;
+	float: center-left;
+	width: 50%;
+	position: relative;
+	display: block;
+    margin: auto;
+}
+footer {
+	font-size: 10px;
+}

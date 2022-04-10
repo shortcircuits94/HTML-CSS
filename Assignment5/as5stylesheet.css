@@ -1,0 +1,81 @@
+/*
+Website Name: The Valley of Fear - Sir Arthur Conan Doyle
+Website Author: Rebecca Scott 
+
+************************************************************
+
+Color Guide:
+Font: White
+Background: Black
+
+**************************************************************
+
+Typography Gudide 
+Headings - 'IM Fell English SC'
+Body - 'IM Fell English SC' 16px;
+
+**************************************************************
+
+0. CSS Reset --------------------- All
+1. Universal Styles -------------- All
+2. Header Styles ----------------- h1-h4
+3. Main Body Content ------------- Body
+4. Image ------------------------- Img
+
+***************************************************************
+
+0. CSS Reset https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css
+4. Image Source https://i.ytimg.com/vi/0IEZp1HAuNQ/maxresdefault.jpg
+
+*/
+
+
+@font-face {
+    font-family: 'im_fell_english_scregular';
+    src: url.('imfeensc28p-webfont.woff2'), 
+         url.('imfeensc28p-webfont.woff');
+	src: localhost(‘J’),
+	url. (woff2) format(text),
+	url. (woff) format(text);
+    font-weight: normal;
+    font-style: normal;
+	
+
+}
+
+* {
+	padding: .5%;
+	margin: .5%;
+}
+
+h1, h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3, h4 {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+
+body {
+	background-color: black;
+	color: white; 
+	text-indent: 0.4em;
+	font-family: 'im_fell_english_scregular', serif;
+	font-size: 16px;
+	font-weight: normal;
+    font-style: normal;
+	letter-spacing: .05em;
+	word-spacing: .05em;
+	
+}
+
+img[title="valleyOfFear"] {
+	float: right;
+	width: 50%;
+	
+}
+
+

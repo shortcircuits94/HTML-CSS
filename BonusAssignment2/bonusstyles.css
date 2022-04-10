@@ -1,0 +1,93 @@
+/**************************************************
+Website: Favourite TV Shows
+Author: Rebecca Scott
+
+***********
+Colour Guide:
+Background: Grey rgb(165, 140, 140)
+Text: Red rgb(226, 9, 9)
+***********
+
+***********
+Font Guide:
+Space Mono
+***********
+
+***********
+Image Reference:
+Sherlock: https://www.google.ca/imgres?imgurl=https%3A%2F%2Fca.movieposter.com%2Fposters%2Farchive%2Fmain%2F157%2FMPW-78722&imgrefurl=https%3A%2F%2Fca.movieposter.com%2Fg19%2FTV_Television_posters-0.html&docid=lWWc85dxUs3NKM&tbnid=9yYJosw2Rnt1yM%3A&vet=10ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwg0KAMwAw..i&w=500&h=774&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwg0KAMwAw&iact=mrc&uact=8
+Community: 
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fwww.tvposter.net%2Fposters%2Fcommunity_2009_2245_poster.jpg&imgrefurl=http%3A%2F%2Fwww.tvposter.net%2Ftvshow-140.html&docid=vuAjbAXqzYlU7M&tbnid=MV2T40S4CoDthM%3A&vet=10ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhPKBQwFA..i&w=800&h=1038&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhPKBQwFA&iact=mrc&uact=8
+Suits:
+https://www.google.ca/imgres?imgurl=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F31%2Fef%2F67%2F31ef67174c22b5db1f672036a257203e.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Ftheseriesgr%2Fseries-posters%2F&docid=CAihv6wd2rreEM&tbnid=KIKMZNAGnPfpFM%3A&vet=10ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhlKCowKg..i&w=926&h=1200&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhlKCowKg&iact=mrc&uact=8
+New Girl:
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fconcertposter.org%2F-2012Dec%2FNew-Girl-mirror-drop.jpg&imgrefurl=http%3A%2F%2Fconcertposter.org%2Fbuy-new-girl-tv-show-posters-collection-zooey-deschanel-for-sale%2F&docid=LRYBpCvnsSy3eM&tbnid=_3Fae0DcFRbxwM%3A&vet=10ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhsKDEwMQ..i&w=971&h=1447&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhsKDEwMQ&iact=mrc&uact=8
+Brooklyn Nine-Nine:
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fconcertposter.org%2F-2012Dec%2FNew-Girl-mirror-drop.jpg&imgrefurl=http%3A%2F%2Fconcertposter.org%2Fbuy-new-girl-tv-show-posters-collection-zooey-deschanel-for-sale%2F&docid=LRYBpCvnsSy3eM&tbnid=_3Fae0DcFRbxwM%3A&vet=10ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhsKDEwMQ..i&w=971&h=1447&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjlqu788__SAhWb14MKHSw1AG8QMwhsKDEwMQ&iact=mrc&uact=8
+Once Upon A Time:
+https://www.google.ca/imgres?imgurl=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F62%2Fea%2F6b%2F62ea6b2be3acd52fb9fbb4fbcaaa7d5c.jpg&imgrefurl=http%3A%2F%2Fcharliebarnetttt.blogspot.com%2Fp%2Ftv-channel.html&docid=nFhG3qkUijj4qM&tbnid=MjkV64219Z5e-M%3A&vet=10ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCBooGDAY..i&w=540&h=720&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCBooGDAY&iact=mrc&uact=8
+FireFly:
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fwww.tvposter.net%2Fposters%2Ffirefly_2002_1833_poster.jpg&imgrefurl=http%3A%2F%2Fwww.tvposter.net%2Ftvshow-106.html&docid=jp8DP99xXxoMyM&tbnid=-YNs-9qzgpvMUM%3A&vet=10ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCC8oLTAt..i&w=547&h=794&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCC8oLTAt&iact=mrc&uact=8
+Doctor Who:
+https://www.google.ca/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F51Mj-6P4BsL.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com%2FDoctor-Who-Poster-Tennant-Tardis%2Fdp%2FB008FL5VYG&docid=Wlk2N_o93IVL1M&tbnid=ZJFzF5n8bRXibM%3A&vet=10ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCCooKDAo..i&w=331&h=500&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCCooKDAo&iact=mrc&uact=8
+iZombie:
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fwww.dhresource.com%2F260x260s%2Ff2-albu-g4-M00-ED-74-rBVaEFf3CKOAY7KNAARPCrhoGz8312.jpg%2Fa334-izombie-tv-season-show-art-silk-poster.jpg&imgrefurl=http%3A%2F%2Fwww.dhgate.com%2Fdiscount%2Ftv-show-posters-on-sale.html&docid=OUR1FLF9MbjNlM&tbnid=zVj6kzGndiZxSM%3A&vet=10ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCEcoRTBF..i&w=209&h=260&itg=1&bih=589&biw=1366&q=tv%20show%20posters&ved=0ahUKEwjy7uD79P_SAhXB24MKHeF0CHU4ZBAzCEcoRTBF&iact=mrc&uact=8
+***********
+***********
+0. CSS Reset
+1. Body
+2. Figure (Images)
+
+***********
+
+*/
+
+* {margin: 0; padding: 0;}
+
+body {
+	text-align: center;
+	font-family: 'Space Mono', monospace;
+	color: rgb(226, 9, 9);
+	background-color: rgb(165, 140, 140);
+}
+
+
+figure {
+	width: 29%;
+	margin: 10px;
+	padding: 0;
+	float: left;
+	position: relative;
+	
+}
+
+
+
+figcaption {
+	display: none; 
+	position: absolute;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: black;
+    color: #fff;
+	border-radius: 6px;
+	z-index: 1;
+	top: 0;
+    left: 85%; 
+	
+}
+
+figure:hover figcaption {
+	display: block;	
+}
+figcaption h4 {
+	font-size: 14px;
+	color: rgb(226, 9, 9);
+	margin-bottom: 6px;
+}
+
+#wrapper {
+	width: 960px; 
+	margin: 0 auto;
+}

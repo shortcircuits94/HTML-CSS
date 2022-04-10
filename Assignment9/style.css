@@ -1,0 +1,110 @@
+/**********
+
+***************
+WebSite: Assignment 9 
+By: Rebecca Scott
+****************
+Colour Guide:
+Text: #E07F15 Orange
+Body: rgb(236,222,200) Beige
+
+****************
+Font Guide:
+PT Sans Narrow
+
+****************
+References:
+https://en.wikipedia.org/wiki/Firefly_(TV_series)
+
+Image References: 
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fmedia.comicbook.com%2F2017%2F02%2Ffirefly-231032.jpg&imgrefurl=http%3A%2F%2Fcomicbook.com%2F2017%2F02%2F09%2Ffox-will-move-forward-with-firefly-reboot-on-one-condition%2F&docid=0Y_3v4C3okYFwM&tbnid=nGflbCVsAdhcvM%3A&vet=10ahUKEwjPzafYlpHTAhWEz4MKHRG3An4QMwgxKAIwAg..i&w=665&h=375&bih=589&biw=1366&q=firefly&ved=0ahUKEwjPzafYlpHTAhWEz4MKHRG3An4QMwgxKAIwAg&iact=mrc&uact=8
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fbsnscb.com%2Fdata%2Fout%2F72%2F39850500-firefly-wallpapers.png&imgrefurl=http%3A%2F%2Fbsnscb.com%2Ffirefly-wallpapers.html&docid=CopUsK2Px6o1HM&tbnid=fxun8BLdyA8DOM%3A&vet=10ahUKEwjPzafYlpHTAhWEz4MKHRG3An4QMwhvKDcwNw..i&w=1920&h=1080&bih=589&biw=1366&q=firefly&ved=0ahUKEwjPzafYlpHTAhWEz4MKHRG3An4QMwhvKDcwNw&iact=mrc&uact=8
+http://geekynerfherder.blogspot.com/2012/07/movie-poster-art-serenity-2005.html
+http://www.yachtoo.net/
+******************
+0. CSS Reset
+1. Header
+2. Body
+3. Figure (Images)
+4. Footer
+******************
+*/
+
+* {margin: 0; padding: 0;}
+
+header {
+	text-align: center;
+	
+}
+
+#wrapper {
+	width: 960px; 
+	margin: 0 auto;
+}
+
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: rgb(236,222,200);
+	font-size: 25px;
+	color: #E07F15;
+	
+
+}
+p {
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+}
+
+
+
+figure {
+	width: 29%;
+	margin: 10px;
+	padding: 10px;
+	display: block;
+	position: relative;
+	float: right; 
+
+}
+
+figcaption {
+	display: none; 
+	position: absolute;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #E07F15;
+    color: #fff;
+	border-radius: 6px;
+	z-index: 1;
+	top: 0;
+    left: 85%; 
+	
+}
+
+figure:hover figcaption {
+	display: block;	
+	transition: background 0.2s ease;
+}
+figcaption h5 {
+	font-size: 14px;
+	color: rgb(236,222,200);
+	margin-bottom: 6px;
+}
+
+img[title="firefly1"] {
+	filter: contrast(200%);
+}
+
+img[title="fireflyopening"] {
+	transform: scale(1.5, 1);
+}
+
+
+
+footer {
+	clear: both;
+	text-align: center;
+}

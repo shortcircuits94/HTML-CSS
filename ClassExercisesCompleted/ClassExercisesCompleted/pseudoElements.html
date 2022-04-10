@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Pseudo Elements</title>
+	<style type="text/css">
+		/*more pseudo classes*/
+
+		p::first-letter {font-size:300%;}
+		/*note that the size changes as the screen size changes */
+		p::first-line {font-variant: small-caps;}
+
+		/* pseduo code does not appear in markup - check source */
+		p.know::before {content:"I know who ";}
+
+		p.know::after {content:" is!!";}
+	</style>
+</head>
+<body>
+<section>
+	<p>Lucas ipsum dolor sit amet windu moff palpatine chewbacca moff moff aayla ponda wedge maul. Mon aayla calrissian antilles. Darth alderaan fett palpatine. Jawa dooku mandalore darth jabba darth. Dagobah jinn hutt wedge. Tatooine mon darth kamino mustafar darth. Skywalker chewbacca biggs jade kashyyyk coruscant. Kenobi solo amidala yoda darth mara maul luuke. Antilles obi-wan organa skywalker tatooine thrawn wedge darth binks. Darth skywalker gonk ewok yoda twi'lek darth jango moff. Fett anakin jade jabba.</p>
+	<p class="know">Batman</p>
+
+</section>
+
+</body>
+
+</html>

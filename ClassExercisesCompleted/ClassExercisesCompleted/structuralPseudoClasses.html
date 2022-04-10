@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>structural Pseudo Classes</title>
+	<style type="text/css">
+		/*structural pseudo classes*/
+
+		:root {background:ff0000;}
+
+		/*style the p that is a first child of its parent*/
+		p:first-child{ background-color:yellow;}
+
+		/*style the p that is a last child of its parent*/
+		p:last-child{ background-color:yellow;}
+
+		/*change the background only on the paragraph that is the 2nd child of its
+		parent*/
+		p:nth-child(2){background:#ff0000;}
+
+		/*Think of n as 0 - so the way every other would work is 2x0 +1 = 1*/
+		p:nth-child(2n+1) {background:#ff0000;}
+		p:nth-child(2n-1){background:#ff0000;}
+
+		/*change the background on the paragraph that is the 2nd child of its
+		 parent starting from the last child*/
+		p:nth-last-child(2){background:#ff0000;}
+
+		/*change the background that is the second p element of its parent*/
+		p:nth-of-type(2){background:#ff0000;}
+
+		/*change the background on the paragraph that is the 2nd of its parent
+		starting from the last child*/
+		p:nth-last-of-type(2){background:#ff0000;}
+
+		/*change the background on the paragraph that is the first of its parent */
+		p:first-of-type {background:#ff0000;}
+
+		/*change the background on the paragraph that is the last of its parent */
+		p:last-of-type {background:#ff0000;}
+
+
+		/*change the background on the paragraph that is the only child of its
+		parent */
+		p:only-child {background:#ff0000;} /*will show nothing*/
+		h1:only-child {background:#ff0000;}
+
+		/*empty elements*/
+		p:empty {width:100px; height:20px;background:#ff0000;}
+
+		/*stlye where it is NOT the element*/
+		p{color:#000000;}
+		:not(p){color:#ff0000;}
+
+	</style>
+
+</head>
+<body>
+	<section>
+	<h1>This is a heading</h1>
+	<p>The first paragraph.</p>
+	<p>The second paragraph.</p>
+	<p>The third paragraph.</p>
+	<p>The fourth paragraph.</p>
+	</section>
+
+</body>
+
+</html>

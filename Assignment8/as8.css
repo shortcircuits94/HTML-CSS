@@ -1,0 +1,55 @@
+/*******************************************
+Website: Summer Camp Registration
+By: Rebecca Scott 
+
+****************
+Colour Guide:
+Background: Light Blue rgb(161, 177, 206)
+Text: Black
+Form: Light Grey
+****************
+Font Guide:
+Body: Merriweather
+****************
+Image Reference:
+https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjUgbOy7P_SAhVC1oMKHUUDDmcQjRwIBw&url=http%3A%2F%2Fsprinklecamp.com%2F&bvm=bv.151325232,d.amc&psig=AFQjCNGkAzP1gQ2MnStwUtvk4-vC6FNbbw&ust=1491018887018837
+****************
+0. CSS Reset
+1. Body Styles
+2. Form Styles
+3. Image Styles
+
+********************************************/
+
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: 'Merriweather', serif;
+	background-color: rgb(199, 213, 237);
+	
+}
+#wrapper {
+	width: 960px; 
+	margin: 0 auto;
+}
+
+fieldset {
+	padding: 20px;
+	margin: 20px;
+	border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+	background-color: lightgrey;
+	border-width: 6px;
+}
+
+#submit {
+	text-align: center;
+}
+
+img[title='camp'] {
+	display: block;
+    margin: auto;
+    width: 60%;
+}

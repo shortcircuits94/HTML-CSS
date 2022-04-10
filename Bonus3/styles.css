@@ -1,0 +1,93 @@
+/**************************************************
+Website: Despicable Me Series
+Author: Rebecca Scott
+
+***********
+Colour Guide:
+Background: Yellow #f4e242
+Text: Blue #4195f4
+***********
+
+***********
+Font Guide:
+Slabo 27px
+***********
+
+***********
+Image Reference:
+Despicable Me
+https://www.google.ca/imgres?imgurl=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2Ffd%2F4c%2Ff2%2Ffd4cf25f99a39cf804f640d6ca7e809f.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fnicoledluttrell%2Fdespicable-me-2%2F&docid=W3RGkS7wQFhyTM&tbnid=EjJYcDWBJMJaAM%3A&vet=10ahUKEwjph6Ps5LTTAhUl2oMKHdTYDGcQMwg5KAMwAw..i&w=1080&h=1600&bih=589&biw=1366&q=despicable%20me%202%20movie%20poster&ved=0ahUKEwjph6Ps5LTTAhUl2oMKHdTYDGcQMwg5KAMwAw&iact=mrc&uact=8
+Despicable Me 2
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fwww.impawards.com%2F2010%2Fposters%2Fdespicable_me_ver6_xlg.jpg&imgrefurl=http%3A%2F%2Fwww.impawards.com%2F2010%2Fdespicable_me_gallery.html&docid=6shUuIdNR7p_hM&tbnid=PXldzcHL4Y9B8M%3A&vet=10ahUKEwioyazZ5LTTAhXl64MKHXVKDMYQMwg4KAAwAA..i&w=1013&h=1500&bih=589&biw=1366&q=despicable%20me%20movie%20poster&ved=0ahUKEwioyazZ5LTTAhXl64MKHXVKDMYQMwg4KAAwAA&iact=mrc&uact=8
+Despicable Me 3
+https://www.google.ca/imgres?imgurl=http%3A%2F%2Fwww.cinecentre.co.za%2Fadmin%2FMovieImages%2F884%2F64_95%2F327.jpg&imgrefurl=https%3A%2F%2Fcinecentre.co.za%2F&docid=zCXdVRO1EhsR3M&tbnid=iHbmbTu461a_9M%3A&vet=10ahUKEwimhI_85bTTAhUB_IMKHaFnDygQMwgqKAkwCQ..i&w=1600&h=2263&bih=589&biw=1366&q=despicable%20me%203movie%20poster&ved=0ahUKEwimhI_85bTTAhUB_IMKHaFnDygQMwgqKAkwCQ&iact=mrc&uact=8
+***********
+***********
+0. CSS Reset
+1. Headers
+2. Body
+3. Video
+4. Figure (Images)
+
+***********
+
+*/
+
+* {margin: 0; padding: 0;}
+
+h1, h2 {
+	color: #4195f4;
+	font-size: 400%;
+}
+body {
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	color: #4195f4;
+	background-color: white;
+}
+#wrapper {
+	width: 960px; 
+	margin: 0 auto;
+	background-color: #f4e242;
+	border-left: 1px solid #4195f4;
+	border-right: 1px solid #4195f4;
+	
+}
+
+
+figure {
+	width: 29%;
+	margin: 10px;
+	padding: 0;
+	float: left;
+	position: relative;
+	
+}
+
+
+
+figcaption {
+	display: none; 
+	position: absolute;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	background-color: #4195f4;
+    color: #fff;
+	border-radius: 6px;
+	z-index: 1;
+	top: 0;
+    left: 85%; 
+	
+}
+
+figure:hover figcaption {
+	display: block;	
+}
+figcaption h4 {
+	font-size: 14px;
+	color: #f4e242;
+	margin-bottom: 6px;
+}
+
+

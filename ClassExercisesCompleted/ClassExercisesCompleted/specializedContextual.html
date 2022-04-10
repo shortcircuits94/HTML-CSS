@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Specialized Contextual Selectors</title>
+	<style type="text/css">
+		/*  > child selector */
+		section > h2 {font-style: italic;}
+		/* adjacent sibling */
+		h2 + p {font-variant: small-caps;}
+		/* ~ general sibling */
+		h2 ~ a {color:red;}
+		/* * universal selector - any elements contained within the p */
+		p * {font-variant: small-caps;}
+
+		/* inverse child selector a not child selector */
+		section * a {font-size: 2em;}
+	</style>
+</head>
+<body>
+<section>
+	<h2>An H2 Heading</h2>
+	<p>This is a paragraph</p>
+	<p>Paragraph 2 has a <a href="#">a link</a> in it</p>
+	<a href="#">Link </a>
+
+	<article>
+	<h2>Another heading</h2>
+	</article>
+
+</section>
+
+</body>
+
+</html>

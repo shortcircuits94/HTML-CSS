@@ -1,0 +1,72 @@
+/*
+Assignment 3
+By: Rebecca Scott 
+
+
+Colours Guide
+#7FFFD4 - Aquamarine
+148,0,211 - DarkViolet
+#FF1493 - Deep Pink
+
+Picture reference
+http://www.tv.com/shows/buffy-the-vampire-slayer/
+
+
+*/
+
+
+
+*	{ font-family: helvetica, sans-serif; }
+
+body { background-color: #7FFFD4; }
+
+h1 {
+	font-size: 300%;
+	text-align: center;
+	color: RGB(148,0,211);
+	text-decoration: underline;
+	
+}
+
+p strong { color: red; }
+
+p {
+	padding: 7px;
+	text-indent: 3px;
+	color: 	#FF1493;
+}
+
+ul {
+	list-style-type: none;
+	color: green;
+	text-align: center;
+}
+p::first-line { font-size: 120%; }
+
+a:link { color: blue; }
+
+a:visited { color: RGB(148,0,211); }
+
+a:hover {
+	text-decoration:none;
+	color: #FF1493;
+}
+a:active{ color: #FF1493; }
+
+img[title="buffy"]{ border:4px solid RGB(148,0,211); }
+
+img[title="buffy2"]{
+	border:4px solid RGB(148,0,211);
+	float: right;	
+}
+
+img[title="buffy3"]{
+	border:4px solid RGB(148,0,211);
+	float: left;
+	position: relative;
+}
+
+footer {
+	text-align: center;
+	position: relative;
+}
