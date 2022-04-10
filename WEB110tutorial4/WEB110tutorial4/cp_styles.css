@@ -1,0 +1,43 @@
+/*
+	New Perspectives on HTML and CSS
+	Tutorial 4
+	Tutorial Case
+
+	Cycle Pathology Style Sheet
+	Author: 
+	Date:   
+
+	Filename:         cp_styles.css
+	Supporting Files: atwood.png, bike_bg.png, rawlings.png
+*/
+
+body {
+	/* background-color: black;
+	background-image: url(bike_bg.png);
+	background-position: left top; 
+	background-repeat: no repeat;	*/
+	
+	background: black url(bike_bg.png) left top no-repeat; 
+	width: 95%;
+	min-width: 1000px; 
+	max-width: 1400px; 
+}
+
+p {
+	border: 1px solid black; 
+	border-radius: 5px;
+}
+/* previous versions prefixes
+	-webkit-border-radius: 5px;  -- chrome, safari
+	-moz-border-radius: 5px; -- firefox
+	-o-border-radius: 5px; -- opera 
+	-ms-border-radius: 5px; microsoft
+	border-radius: 5px; -- standard 
+*/
+
+nav.horizontalNav {
+	font-size: 87.5%;
+	text-align: center;
+	width: 20%;
+	float: left; 
+}
