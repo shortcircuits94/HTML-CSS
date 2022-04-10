@@ -1,0 +1,100 @@
+﻿/*
+	New Perspectives on HTML and CSS
+	Tutorial 3
+	Case Problem 2
+
+	Mountain Wheels Text and Color Style
+	Author: Rebecca Scott 
+	Date:	2016-10-18
+
+	Filename:			mw_layout.css
+	Supporting Files: none
+
+*/
+
+body {
+	font-family: Tahoma, Geneva, sans-serif; 
+}
+
+#articleheader {
+	font-weight: normal;
+	font-size: 18px;
+	letter-spacing: 7px;
+	text-align: center;
+}
+
+ul  {
+	background-color: rgb(125,120,89);
+	line-height: 3em; 
+	list-style: none; /* Remove list bullets */
+
+}
+	
+
+ul a:link {
+	color: white; 
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	
+}
+
+ul li:hover {
+	list-style-image: url('wheelmarker.png');
+	background-color: rgb(131,121,36);
+	color: rgba(255,255,255,1.0);
+	color: yellow;
+	
+}
+	
+#leftsection p  {
+	font-size: 22px;
+}
+#leftsection p:first-of-type:first-line {
+	text-transform: uppercase;
+}
+
+blockquote {
+	display: block;
+	background-color: rgb(131,121,36);
+	font-size: 16px; 
+	font: Comic Sans MS, Times, cursive;
+}
+blockquote p {
+  quotes: "“" "”" "‘" "’";
+}
+blockquote p:before {
+    content: open-quote;
+}
+blockquote p:after {
+    content: close-quote;
+}
+
+
+#rightsection  h1 {
+	font-size: 22px; 
+	letter-spacing: 3px; 
+	text-align: center;
+	font-weight: normal;
+}
+
+#rightsection h2 {
+	font-size: 18px;
+	text-align: right;
+	font-weight: normal 
+}
+
+#rightsection p {
+	color: gray; 
+	font-size: 14px; 
+	text-align: justify;
+}
+
+address {
+	font-size: 14px;
+	font-style: normal;
+	text-align: center;
+}
+
+
+	
+	

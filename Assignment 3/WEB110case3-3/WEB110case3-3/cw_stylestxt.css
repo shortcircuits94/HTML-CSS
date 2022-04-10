@@ -1,0 +1,93 @@
+﻿/*
+	New Perspectives on HTML and CSS
+	Tutorial 3
+	Case Problem 3
+
+	Civil War History Text and Color Style
+	Author: Rebecca Scott
+	Date:	2016-10-18
+
+	Filename: cw_styles.css
+	Supporting Files: cw_layout.css
+
+*/
+
+@import url('/css/layout.css'); /* all files can be loaded from a single document */
+body {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: hsla(212,0%,0%,0.4);
+	font-family: Trebuchest MS, Helvetica, sans-serif;
+	font-weight: normal; 
+	letter-spacing: 5px; 
+	text-indent: 5px 
+}
+
+body > header > h1 {
+	background-color: hsl(212,100%,29%);
+}
+
+nav.horizontal ul {
+	font: Century Gothic MS, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold; 
+	letter-spacing: 3px;
+	line-height: 20 px; 
+	list-style: none;
+}
+
+nav.horizontal a:link {
+	color: hsl(212,100%,70%);
+	text-decoration: none;
+}
+
+nav.horizontal a:hover {
+	color: hsl(212,100%,29%);
+}
+
+nav.vertical {
+	background-color: hsl(32,100%,95%);
+}
+
+nav.vertical h4 {
+	color: hsl(32,0%,0%);
+	opacity: 0.5;
+	font-size: 18px;
+	text-indent: 15px;
+}
+
+nav.vertical ol {
+	list-style-type: upper-roman;
+	line-height: 2em;
+}
+
+nav.vertical ol ol{
+	list-style-type: upper-alpha;
+	line-height: 2em;
+}
+
+nav.vertical a:link {
+	color: hsl(212,100%,29);
+	opacity: 0.6;
+	text-decoration: none;
+}
+nav.vertical a:hover {
+	opacity: 1.0;
+	text-decoration: underline;
+}
+
+section {
+	background-color: hsl(212,95%,90%);
+}
+
+article p:first-of-type:first-letter {
+	font-size: 32px;
+}
+
+footer {
+	font-size: 10px;
+	line-height: 30px; 
+	text-align: center;
+}

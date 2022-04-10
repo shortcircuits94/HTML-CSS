@@ -1,0 +1,51 @@
+/*
+	New Perspectives on HTML
+	Tutorial 3
+	Case Problem 1
+
+	ICI Text and Color Styles
+	Author: Rebecca Scott	
+	Date: 2016-10-18
+
+	Filename: c_styles.css
+	Supporting Files: none
+
+*/
+
+body {
+	background-color: black;
+	font-family: Century Gothic, sans-serif;
+	color: white;
+}
+
+/* Header list styles */ 
+h1 {
+	text-align: center;
+	color: yellow; 
+	font-family: Courier New, Courier, monospace;
+	font-size: 28px;
+	letter-spacing: 20px
+}
+
+h2 {
+	font-size: 24px;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+
+article {
+	text-align: justify;
+}
+
+.keyword {
+	color: yellow;
+	font-weight: normal; 
+}
+
+footer {
+	text-align: center;
+}
+
+.usemap {
+	border: 0px
+}
