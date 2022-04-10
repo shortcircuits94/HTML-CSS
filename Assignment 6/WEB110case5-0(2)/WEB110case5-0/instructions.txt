@@ -1,0 +1,15 @@
+# Case 0 - Endangered Species
+
+* Create an HTML table with 3 columns (Status, Name, and Scientific Name). 
+  To do this, remove the <pre> tags and insert the necessary table elements.
+* Include a row of headings
+* Include a table caption "Endangered Species".
+* Make the table wider
+* Add borders
+* Colour the heading row pale blue
+* Colour the rows with endangered animals pink and the rows with 
+  threatened animals light yellow (add an appropriate class to each row)
+* Make all fonts in the table sans-serif
+* Make the headings and caption bold
+* Reposition the caption to the bottom center of the table
+* Validate both HTML and CSS

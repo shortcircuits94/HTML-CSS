@@ -1,0 +1,133 @@
+/*
+	New Perspectives on HTML and CSS
+	Tutorial 5
+	Case Problem 3
+
+	Dome Table Style Sheet
+	Author: Rebecca Scott 
+	Date:   2016-12-06
+*/
+
+
+table.domeSpecs {
+	font-size: 16px;
+	margin-left: 20px; 
+	margin-bottom: 20px; 
+	float: right; 
+	border-collapse: collapse; 
+	background-image: url(tableback.png);
+	background-position: right bottom; 
+	background-repeat: no-repeat;
+	}
+
+table.domeSpecs td {
+	padding-top: 0px; 
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+
+/* Table Caption Style */
+
+table.domeSpecs caption {
+	font-size: 18px; 
+	letter-spacing: 5px; 
+	text-align: center;
+	margin-bottom: 10px; 
+	caption-side: top;
+	}
+
+/* Table Header Styles */
+
+table.domeSpecs thead {
+	border-bottom: 2px solid gray;
+	background-image: url(top.jpg);
+	}
+
+table.domeSpecs thead tr {
+	height: 40px;
+	}
+
+table.domeSpecs thead th {
+	padding-top: 0px; 
+	padding-bottom: 0px; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+	letter-spacing: 2px;
+}
+
+table.domeSpecs thead tr th:first-of-type {
+	background-image: url(topleft.jpg); 
+	background-position: left top; 
+	background-repeat: no-repeat;
+	}
+
+table.domeSpecs thead tr th:last-of-type {
+	background-image: url(topright.jpg); 
+	background-position: right top;
+	background-repeat: no-repeat;
+	}
+
+/* Table Footer Styles */
+
+table.domeSpecs tfoot {
+	border-top: 2px solid gray; 
+	text-align: center; 
+	background-image: url(bottom.jpg);
+	background-repeat: repeat-x; 
+	background-position: bottom;
+	}
+
+table.domeSpecs tfoot tr {
+	height: 40px;
+	}
+
+table.domeSpecs tfoot tr td:first-of-type {
+	background-image: url(bottomleft.jpg); 
+	background-position: left bottom; 
+	background-repeat: no-repeat;
+	}
+
+table.domeSpecs tfoot tr td:last-of-type {
+	background-image: url(bottomright.jpg); 
+	background-position: right bottom; 
+	background-repeat: no-repeat;
+	}
+
+/* Table Body Styles */
+
+table.domeSpecs tbody tr {
+	height: 50px; 
+	border-bottom: 1px dotted gray;
+	}
+
+table.domeSpecs tbody td:first-of-type {
+	background-image: url(left.jpg); 
+	background-position: left top;
+	background-repeat: repeat-y;
+	}
+
+table.domeSpecs tbody td:last-of-type {
+	background-image: url(right.jpg);
+	background-position: right top; 
+	background-repeat: repeat-y; 
+	text-align: right;
+	}
+
+table.domeSpecs tbody tr:nth-of-type(even) {
+	background-color: rgba(152,228,215,.6);
+	} 
+
+table.domeSpecs tbody tr:nth-of-type(odd) {
+	background-color: rgba(255,255,255,.6);
+	}
+
+/* Table col Styles */
+
+table.domeSpecs col.firstColumn {
+	width: 22%;
+	}
+
+table.domeSpecs col.lastColumn {
+	width: 22%;
+	}

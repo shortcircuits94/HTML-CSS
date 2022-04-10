@@ -1,0 +1,42 @@
+/* Add CSS for the Endangered table here 
+	Course: WEB110
+	Date: 2016-12-06
+	Name: Rebecca Scott
+	Student Number: 0698711
+*/
+
+/* Table Styles */
+table {
+	border: 2px;
+	padding: 5px;
+	font-family: sans-serif;
+	
+}
+
+table, th, td {
+    border: 5px solid gray;
+}
+
+/* Table Header Styles */
+
+thead {
+	background-color: rgb(173, 216, 230);
+	font-weight: bold;
+}
+
+
+/* Table Caption */
+caption {
+	font-weight: bold;
+	text-align: center;
+	caption-side:bottom;
+	
+}
+
+tr.endangered {
+	background-color: pink;
+	} 
+
+tr.threatened {
+	background-color: rgb(242, 254, 138);
+}
